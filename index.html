@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>反差大赛在线-老照片与今照同框的榜单玩法</title>
+<meta name="description" content="反差大赛在线，把老照片与今天同角度自拍拼成同框的线上活动。收录反差大赛在线榜单、参赛规则、换装翻拍教程、评审标准与观众评论，按场景和年代分类，方便直接查条目、找选题、比对前后差异。">
+<meta name="keywords" content="反差大赛在线">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b2a4a'/%3E%3Cpath d='M14 44V20h16l4 6h16v18z' fill='none' stroke='%23ffcf5c' stroke-width='4'/%3E%3Ccircle cx='32' cy='35' r='7' fill='%23ff7a5c'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"反差大赛在线","inLanguage":"zh-CN","description":"老照片与今照同框的反差活动在线索引，含榜单、规则、教程与评论。"}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"反差大赛在线的同框拼图用什么比例最稳？","acceptedAnswer":{"@type":"Answer","text":"竖向 4:5 单张、左右各占一半的 8:5 画布最稳。老照片多为 6 寸扫描件，横向裁切后人物头部落在画面上三分之一处，今照用同一机位仰角 5 度以内复拍，接缝不易穿帮。"}},
+{"@type":"Question","name":"老照片只有黑白一张，还能参加反差大赛吗？","acceptedAnswer":{"@type":"Answer","text":"可以，但要保留原始底片色调。2026 年 10 月 19 日第二轮评审说明里写明：黑白组与彩色组分开排名，硬上色会被归到彩色组，反而与修图高手同场竞争。"}},
+{"@type":"Question","name":"换装翻拍时背景里的老式物件要不要保留？","acceptedAnswer":{"@type":"Answer","text":"保留三件以内最有效。评委在 10 月 26 日直播中提过，背景中的搪瓷缸、木框窗、旧挂历比新衣服更能说明时间差，超过五件则视线分散。"}},
+{"@type":"Question","name":"评审到底看角度还是看故事？","acceptedAnswer":{"@type":"Answer","text":"评分表公开为四项：机位还原 30 分、年代元素 25 分、人物状态 25 分、说明文字 20 分。故事只落在最后 20 分，机位错了丢分最多。"}},
+{"@type":"Question","name":"反差大赛在线的作品可以商用吗？","acceptedAnswer":{"@type":"Answer","text":"活动只取得展示授权，不代管商用。往届有咖啡馆擅自把获奖同框照印成杯垫，作者 10 月 8 日发帖维权，最终由店家撤下并补签授权。"}},
+{"@type":"Question","name":"手机原相机和第三方相机哪个更容易过审？","acceptedAnswer":{"@type":"Answer","text":"原相机直出更稳。10 月 22 日提交系统升级后，带美颜水印或机型参数被抹掉的文件会在初筛阶段退回，需重新上传原始 Exif 信息。"}}
+]}
+</script>
+<style>
+:root{
+  --ink:#23223a;--ink-2:#4a4966;--ink-3:#767592;
+  --paper:#f7f4ee;--card:#ffffff;--line:#e0dbd0;
+  --brand:#2b2a4a;--brand-soft:#3d3b63;
+  --accent:#ff7a5c;--accent-2:#ffcf5c;--teal:#2f8f83;
+  --radius:14px;--radius-sm:8px;
+  --shadow:0 2px 4px rgba(35,34,58,.06),0 10px 26px rgba(35,34,58,.07);
+  --shadow-hover:0 4px 8px rgba(35,34,58,.08),0 16px 34px rgba(35,34,58,.11);
+  --sp1:8px;--sp2:16px;--sp3:24px;--sp4:36px;--sp5:56px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  --sticky:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:16px;line-height:1.78;-webkit-text-size-adjust:100%}
+img{max-width:100%;display:block}
+a{color:var(--brand-soft);text-decoration:none}
+a:hover{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+h1,h2,h3{line-height:1.32;margin:0;font-weight:800;letter-spacing:.2px}
+p{margin:0 0 12px}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+section[id],div[id]{scroll-margin-top:var(--sticky)}
+/* 吸顶区 */
+.sticky-top{position:sticky;top:0;z-index:60}
+.notice{background:var(--brand);color:#efeaf6;font-size:13.5px;letter-spacing:.2px}
+.notice .wrap{display:flex;gap:12px;align-items:center;padding:8px 0;flex-wrap:wrap}
+.notice b{color:var(--accent-2);font-weight:700}
+.notice a{color:#fff;border-bottom:1px dashed rgba(255,255,255,.5)}
+.nav-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none;box-shadow:0 0 0 3px rgba(255,122,92,.22)}
+.site-header{background:rgba(247,244,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:var(--sp3);padding:12px 0}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand-mark{width:42px;height:42px;flex:none}
+.brand-text{font-size:19px;font-weight:800;color:var(--brand);letter-spacing:.5px}
+.brand-sub{display:block;font-size:11px;font-weight:500;color:var(--ink-3);letter-spacing:1.4px}
+.nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+.nav a{padding:8px 11px;font-size:14.5px;color:var(--ink-2);border-radius:6px;white-space:nowrap}
+.nav a:hover{background:#ece7dd;color:var(--brand)}
+.hd-tools{display:flex;gap:8px;align-items:center;flex:none}
+.search{display:flex;align-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 4px 4px 12px}
+.search input{border:0;background:transparent;font-family:var(--font);font-size:14px;width:132px;padding:5px 2px;color:var(--ink)}
+.search input:focus{outline:none}
+.search button{border:0;background:var(--brand);color:#fff;border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;font-family:var(--font)}
+.menu-btn{display:none;border:1px solid var(--line);background:#fff;border-radius:8px;padding:8px 11px;font-size:14px;font-family:var(--font);color:var(--brand);cursor:pointer;align-items:center;gap:6px}
+.menu-btn svg{width:16px;height:16px}
+.search-feedback{font-size:13px;color:var(--accent);padding:2px 0 8px;display:none}
+.search-feedback.on{display:block}
+/* 首屏 */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,#2b2a4a 0%,#3a3862 58%,#4a477a 100%);color:#f3f0ea;padding:var(--sp5) 0 0}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:var(--sp4);align-items:center}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.6px;color:var(--accent-2);border:1px solid rgba(255,207,92,.4);border-radius:999px;padding:5px 13px;margin-bottom:18px}
+.hero h1{font-size:clamp(34px,4.6vw,52px);line-height:1.16;margin-bottom:16px}
+.hero h1 span{color:var(--accent-2)}
+.hero-desc{font-size:16px;color:#cfcae4;max-width:33em;margin-bottom:24px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:10px;font-size:15px;font-weight:600;transition:transform .18s,box-shadow .18s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{color:#fff;transform:translateY(-2px);box-shadow:0 10px 22px rgba(255,122,92,.35)}
+.btn-ghost{border:1px solid rgba(255,255,255,.34);color:#f3f0ea}
+.btn-ghost:hover{color:#fff;background:rgba(255,255,255,.08)}
+.hero-stats{display:flex;gap:var(--sp3);flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.16);padding-top:20px}
+.hero-stats div{min-width:96px}
+.hero-stats b{display:block;font-size:24px;font-weight:800;color:var(--accent-2);font-variant-numeric:tabular-nums}
+.hero-stats small{font-size:12.5px;color:#b9b3d4;letter-spacing:.6px}
+.hero-visual{position:relative;min-height:400px}
+.hero-visual svg{width:100%;height:auto;display:block;filter:drop-shadow(0 22px 40px rgba(0,0,0,.32))}
+.hero-wave{display:block;width:100%;height:56px;margin-top:var(--sp5)}
+/* 主区 */
+main{padding:var(--sp5) 0}
+.sec{margin-bottom:var(--sp5)}
+.sec-head{display:flex;align-items:flex-end;gap:var(--sp2);flex-wrap:wrap;margin-bottom:20px;border-bottom:1px solid var(--line);padding-bottom:12px}
+.sec-head h2{font-size:clamp(21px,2.3vw,26px);color:var(--brand)}
+.sec-kicker{font-size:12.5px;letter-spacing:1.4px;color:var(--teal);font-weight:700}
+.sec-note{margin-left:auto;font-size:13px;color:var(--ink-3)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 312px;gap:var(--sp4);align-items:start}
+.side{position:sticky;top:var(--sticky);display:grid;gap:var(--sp3)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.card-pad{padding:20px}
+.side-nav{list-style:none;margin:0;padding:8px}
+.side-nav a{display:block;padding:8px 12px;border-radius:8px;font-size:14.5px;color:var(--ink-2);border-left:3px solid transparent}
+.side-nav a:hover{background:#f2ede3}
+.side-nav a.active{background:#f2ede3;color:var(--brand);font-weight:700;border-left-color:var(--accent)}
+.side-title{font-size:13px;letter-spacing:1.2px;color:var(--ink-3);font-weight:700;padding:14px 20px 0}
+/* 概览 */
+.overview{display:grid;grid-template-columns:1.4fr 1fr;gap:20px}
+.overview-lead{background:linear-gradient(150deg,#fff,#fbf7ef);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.overview-lead h3{font-size:19px;margin-bottom:10px;color:var(--brand)}
+.overview-lead ul{margin:12px 0 0;padding-left:18px;font-size:14.5px;color:var(--ink-2)}
+.overview-lead li{margin-bottom:6px}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);padding:14px 16px}
+.mini b{display:block;font-size:20px;color:var(--accent);font-variant-numeric:tabular-nums}
+.mini span{font-size:13px;color:var(--ink-2)}
+/* 精选网格 */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pick{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s}
+.pick:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.pick figure{margin:0;aspect-ratio:16/10;overflow:hidden;background:#e6e0d6}
+.pick img{width:100%;height:100%;object-fit:cover}
+.pick-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pick-body h3{font-size:16.5px;color:var(--brand)}
+.pick-body p{font-size:13.8px;color:var(--ink-2);margin:0}
+.pick-meta{margin-top:auto;font-size:12.5px;color:var(--ink-3);display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding-top:6px}
+.chip{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;background:#f0ece2;color:var(--ink-2)}
+.chip.hot{background:rgba(255,122,92,.14);color:#c2472c}
+.chip.new{background:rgba(47,143,131,.14);color:#1f6b61}
+/* 最新更新 紧凑列表 */
+.updates{list-style:none;margin:0;padding:0;border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden}
+.updates li{display:grid;grid-template-columns:88px 1fr auto;gap:14px;align-items:baseline;padding:14px 20px;border-bottom:1px dashed var(--line);font-size:14.5px}
+.updates li:last-child{border-bottom:0}
+.updates time{color:var(--teal);font-size:13px;font-variant-numeric:tabular-nums;font-weight:600}
+.updates .u-title{color:var(--ink);font-weight:600}
+.updates .u-desc{color:var(--ink-2);font-size:13.4px}
+.updates .u-tag{font-size:12px;color:var(--ink-3);white-space:nowrap}
+/* 分类索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:10px}
+.tag-index a{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px;color:var(--ink-2);transition:border-color .15s,transform .15s}
+.tag-index a b{font-size:12px;color:var(--accent);font-variant-numeric:tabular-nums}
+.tag-index a:hover{border-color:var(--accent);transform:translateY(-2px)}
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,36px);box-shadow:var(--shadow)}
+.deep h2{font-size:clamp(22px,2.6vw,28px);margin-bottom:8px}
+.deep-lede{font-size:15px;color:var(--ink-2);border-left:3px solid var(--accent);padding-left:14px;margin-bottom:24px}
+.deep h3{font-size:17.5px;color:var(--brand);margin:26px 0 10px}
+.deep p{font-size:15px;color:#38374f}
+.deep strong{color:var(--brand)}
+.callout{background:#fbf6e9;border:1px solid #efe2c4;border-radius:10px;padding:16px 18px;font-size:14.5px;margin:16px 0;color:#4a422c}
+.callout b{color:#8a5a12}
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:16px 0;font-size:14px}
+.compare>div{padding:14px 16px}
+.compare .c-head{background:#f2ede3;font-weight:700;color:var(--brand);font-size:13.5px}
+.compare .c-left{border-right:1px solid var(--line)}
+.compare ul{margin:6px 0 0;padding-left:16px;color:var(--ink-2)}
+.table-wrap{overflow-x:auto;margin:16px 0;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:460px;background:#fff}
+th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:#f2ede3;color:var(--brand);font-size:13.5px}
+td{color:var(--ink-2);font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:0}
+/* 步骤 */
+.steps{counter-reset:s;list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.steps li{counter-increment:s;position:relative;padding:16px 18px 16px 62px;background:#fff;border:1px solid var(--line);border-radius:10px;font-size:14.6px;color:var(--ink-2)}
+.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:16px;top:15px;width:32px;height:32px;border-radius:9px;background:var(--brand);color:var(--accent-2);font-weight:800;font-size:13.5px;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.steps li b{color:var(--ink)}
+/* FAQ */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:10px;margin-bottom:10px;overflow:hidden}
+.faq summary{cursor:pointer;padding:15px 18px;font-weight:700;font-size:15px;color:var(--brand);list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";font-weight:400;color:var(--accent);font-size:18px;line-height:1}
+.faq details[open] summary::after{content:"－"}
+.faq details[open] summary{background:#faf6ee;border-bottom:1px solid var(--line)}
+.faq .ans{padding:14px 18px;font-size:14.5px;color:var(--ink-2)}
+/* 评论 */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.cmt{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px;font-size:14.3px;color:var(--ink-2);box-shadow:var(--shadow)}
+.cmt-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.avatar{width:34px;height:34px;border-radius:50%;background:linear-gradient(140deg,#ffcf5c,#ff7a5c);color:#fff;display:grid;place-items:center;font-weight:800;font-size:14px;flex:none}
+.cmt-name{font-size:13.6px;font-weight:700;color:var(--brand)}
+.cmt-time{font-size:12px;color:var(--ink-3);margin-left:auto}
+.cmt p{margin:0;font-size:14px}
+.cmt .refer{display:inline-block;margin-top:8px;font-size:12.5px;color:var(--teal);background:rgba(47,143,131,.1);padding:2px 9px;border-radius:6px}
+/* 资讯 */
+.news{list-style:none;margin:0;padding:0;display:grid;gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.news li{padding:16px 20px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:start}
+.news li:last-child{border-bottom:0}
+.news .date{font-size:12.5px;color:var(--ink-3);font-variant-numeric:tabular-nums;padding-top:2px}
+.news h3{font-size:15.5px;color:var(--brand);margin-bottom:4px}
+.news p{font-size:13.8px;color:var(--ink-2);margin:0}
+/* 榜单时间线 */
+.timeline{list-style:none;margin:0;padding:0 0 0 22px;border-left:2px solid var(--line);display:grid;gap:18px}
+.timeline li{position:relative;font-size:14.5px;color:var(--ink-2)}
+.timeline li::before{content:"";position:absolute;left:-29px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--paper)}
+.timeline b{display:block;color:var(--brand);font-size:15px;margin-bottom:2px}
+.timeline time{font-size:12.5px;color:var(--teal);font-weight:600;font-variant-numeric:tabular-nums}
+/* 推荐标签 */
+.reco{display:flex;flex-wrap:wrap;gap:10px}
+.reco a{font-size:13.6px;padding:7px 14px;border-radius:8px;background:#fff;border:1px solid var(--line);color:var(--ink-2)}
+.reco a:hover{border-color:var(--accent);color:var(--accent)}
+/* 侧栏小卡 */
+.side-card h3{font-size:15px;color:var(--brand);padding:16px 18px 0}
+.rank{list-style:none;margin:0;padding:10px 10px 14px}
+.rank li{display:grid;grid-template-columns:22px 1fr;gap:10px;padding:8px 8px;font-size:13.8px;color:var(--ink-2);border-radius:6px}
+.rank li:hover{background:#f4efe5}
+.rank li i{font-style:normal;font-weight:800;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.rank li:nth-child(1) i,.rank li:nth-child(2) i,.rank li:nth-child(3) i{color:var(--accent)}
+/* 页尾 */
+footer{background:var(--brand);color:#cfcae4;padding:var(--sp5) 0 28px;margin-top:var(--sp4)}
+.f-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:var(--sp3);padding-bottom:var(--sp4);border-bottom:1px solid rgba(255,255,255,.14)}
+.f-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.f-brand .brand-text{color:#fff}
+.f-brand .brand-sub{color:#9c96bd}
+footer h4{font-size:14px;color:#fff;margin:0 0 12px;letter-spacing:.6px}
+footer ul{list-style:none;margin:0;padding:0;font-size:13.6px;line-height:2.1}
+footer a{color:#cfcae4}
+footer a:hover{color:var(--accent-2)}
+.f-note{font-size:12.8px;line-height:1.9;color:#a8a2c6}
+.f-bottom{display:flex;gap:var(--sp2);flex-wrap:wrap;justify-content:space-between;padding-top:20px;font-size:12.6px;color:#a8a2c6}
+/* 回到顶部 */
+.top-btn{position:fixed;right:20px;bottom:22px;width:44px;height:44px;border-radius:50%;border:0;background:var(--brand);color:#fff;cursor:pointer;box-shadow:var(--shadow);display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .2s,transform .2s;z-index:70}
+.top-btn.show{opacity:1;visibility:visible}
+.top-btn:hover{transform:translateY(-3px)}
+/* 响应式 */
+@media (max-width:1024px){
+  .layout{grid-template-columns:1fr}
+  .side{position:static;order:2;grid-template-columns:1fr 1fr}
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-visual{min-height:auto;max-width:460px;margin-inline:auto}
+  .grid-3{grid-template-columns:repeat(2,1fr)}
+  .overview{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .menu-btn{display:inline-flex}
+  .nav{display:none;position:absolute;left:0;right:0;top:100%;background:#fff;border-bottom:1px solid var(--line);padding:10px 20px 16px;flex-direction:column;gap:2px;box-shadow:var(--shadow)}
+  .nav.open{display:flex}
+  .hd{position:relative;flex-wrap:wrap}
+  .nav a{padding:10px 8px;border-bottom:1px dashed var(--line)}
+}
+@media (max-width:720px){
+  :root{--sticky:84px;--sp4:26px;--sp5:40px}
+  .wrap{width:calc(100% - 28px)}
+  .grid-3{grid-template-columns:1fr}
+  .comments{grid-template-columns:1fr}
+  .side{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare .c-left{border-right:0;border-bottom:1px solid var(--line)}
+  .updates li{grid-template-columns:1fr;gap:3px}
+  .updates li time{font-size:12.5px}
+  .hero-stats{gap:18px}
+  .hero-stats b{font-size:20px}
+  .search input{width:96px}
+  .news li{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .top-btn{right:14px;bottom:16px;width:40px;height:40px}
+  .mini-grid{grid-template-columns:1fr 1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<div class="sticky-top">
+  <div class="notice">
+    <div class="wrap">
+      <span class="nav-dot" aria-hidden="true"></span>
+      <span><b>反差大赛在线</b> 第三轮投稿 11月6日 23:00 截止，主题「同一扇窗」</span>
+      <a href="/#updates">查看本轮时间节点</a>
+      <span style="color:#a9a3cf">10月31日 更新评审细则第 4 条</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap hd">
+      <a class="brand" href="/#" aria-label="反差大赛在线首页">
+        <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="双画框反差标志">
+          <rect x="3" y="3" width="58" height="58" rx="14" fill="#2b2a4a"/>
+          <rect x="14" y="17" width="17" height="30" rx="3" fill="none" stroke="#ffcf5c" stroke-width="3"/>
+          <rect x="33" y="17" width="17" height="30" rx="3" fill="none" stroke="#ff7a5c" stroke-width="3"/>
+          <circle cx="22.5" cy="32" r="4.4" fill="#ffcf5c"/>
+          <circle cx="41.5" cy="32" r="4.4" fill="#ff7a5c"/>
+        </svg>
+        <span>
+          <span class="brand-text">反差大赛在线</span>
+          <span class="brand-sub">OLD PHOTO · NOW</span>
+        </span>
+      </a>
+      <nav class="nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">反差活动概览</a>
+        <a href="/#picks">同框精选</a>
+        <a href="/#updates">投稿动态</a>
+        <a href="/#channels">场景分类</a>
+        <a href="/#deep">机位解析</a>
+        <a href="/#guide">翻拍指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">观众评论</a>
+      </nav>
+      <div class="hd-tools">
+        <form class="search" role="search" id="searchForm">
+          <label for="q" style="position:absolute;left:-9999px">站内查找反差条目</label>
+          <input id="q" name="q" type="search" placeholder="查条目／年份／场景" autocomplete="off">
+          <button type="submit">查找</button>
+        </form>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          菜单
+        </button>
+        <a class="btn btn-primary" href="/#guide" style="padding:9px 14px;font-size:14px">参赛规矩</a>
+      </div>
+    </div>
+    <div class="wrap"><p class="search-feedback" id="searchFeedback" role="status"></p></div>
+  </header>
+</div>
+
+<section class="hero" aria-labelledby="heroTitle">
+  <div class="wrap">
+    <div>
+      <span class="hero-tag">2026 秋季场 · 第四年</span>
+      <h1 id="heroTitle">反差大赛在线：把<span>二十年前那张照片</span>按原样重拍一遍</h1>
+      <p class="hero-desc">核心玩法只有一条：找出老照片里的机位、光线和背景物件，用今天的样子在同一个位置复拍，两张并排。评的是机位还原度，不是谁变化大。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#picks">看本轮同框精选</a>
+        <a class="btn btn-ghost" href="/#guide">翻拍操作步骤</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>1,846</b><small>本轮已收同框稿</small></div>
+        <div><b>37</b><small>覆盖城市与县城</small></div>
+        <div><b>1993–2008</b><small>老照片拍摄年份区间</small></div>
+        <div><b>4 项</b><small>公开评分维度</small></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 480 400" role="img">
+        <defs>
+          <linearGradient id="skyG" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffcf5c"/><stop offset="1" stop-color="#ff7a5c"/>
+          </linearGradient>
+          <linearGradient id="nowG" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#5c5a8a"/><stop offset="1" stop-color="#2f8f83"/>
+          </linearGradient>
+        </defs>
+        <g transform="rotate(-3 120 200)">
+          <rect x="26" y="58" width="176" height="222" rx="8" fill="#f7f4ee" stroke="#e0dbd0" stroke-width="2"/>
+          <rect x="40" y="72" width="148" height="152" rx="4" fill="url(#skyG)"/>
+          <rect x="40" y="72" width="148" height="152" rx="4" fill="none" stroke="#c9c2b2" stroke-width="2"/>
+          <circle cx="86" cy="120" r="17" fill="#fff3d8" opacity=".85"/>
+          <rect x="40" y="196" width="148" height="28" fill="#8a6f52" opacity=".7"/>
+          <rect x="72" y="128" width="30" height="86" fill="#6a4f3a" opacity=".78"/>
+          <rect x="122" y="140" width="22" height="74" fill="#6a4f3a" opacity=".6"/>
+          <text x="40" y="254" font-family="sans-serif" font-size="15" fill="#767592">1998 · 老相册</text>
+        </g>
+        <g transform="rotate(2 340 210)">
+          <rect x="252" y="96" width="200" height="240" rx="8" fill="#ffffff" stroke="#d9d2c4" stroke-width="2"/>
+          <rect x="266" y="110" width="172" height="166" rx="4" fill="url(#nowG)"/>
+          <rect x="266" y="110" width="172" height="166" rx="4" fill="none" stroke="#c9c2b2" stroke-width="2"/>
+          <circle cx="318" cy="162" r="17" fill="#ffe6a8" opacity=".7"/>
+          <rect x="266" y="242" width="172" height="34" fill="#5f5343" opacity=".75"/>
+          <rect x="302" y="176" width="30" height="86" fill="#3c3852" opacity=".8"/>
+          <rect x="356" y="190" width="22" height="72" fill="#3c3852" opacity=".62"/>
+          <text x="266" y="300" font-family="sans-serif" font-size="15" fill="#767592">2026 · 同一扇窗</text>
+        </g>
+        <path d="M196 210h48" stroke="#ffcf5c" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 8"/>
+        <circle cx="220" cy="210" r="9" fill="#ffcf5c"/>
+        <text x="192" y="382" font-family="sans-serif" font-size="14" letter-spacing="3" fill="#bdb6d6">同机位 · 同视线 · 不同年份</text>
+      </svg>
+    </div>
+  </div>
+  <svg class="hero-wave" viewBox="0 0 1440 56" preserveAspectRatio="none" aria-hidden="true"><path d="M0 56V22c180 22 360 22 540 6s360-30 540-14 300 32 360 32v10z" fill="#f7f4ee"/></svg>
+</section>
+
+<main>
+  <div class="wrap layout">
+    <!-- 主列 -->
+    <div class="col-main">
+
+      <!-- 概览 -->
+      <section class="sec" id="overview" aria-labelledby="overviewTitle">
+        <div class="sec-head">
+          <h2 id="overviewTitle">反差活动概览：怎么比、比什么</h2>
+          <span class="sec-kicker">FIELD NOTES</span>
+        </div>
+        <div class="overview">
+          <div class="overview-lead">
+            <h3>同框复拍的四项评分，机位占三成</h3>
+            <p>规则把「像不像同一张」拆成可打分的四块：机位还原 30 分、年代元素 25 分、人物状态 25 分、说明文字 20 分。评委在 10 月 26 日直播里逐项举过例，机身高度差半个头就要扣分。</p>
+            <ul>
+              <li>机位还原：仰角、焦段、画幅取向，老照片扫描件的边缘黑框最好留着。</li>
+              <li>年代元素：背景至少三件老物件，搪瓷缸、木框窗、旧挂历都算。</li>
+              <li>人物状态：同姿势、同视线朝向，不必同表情。</li>
+              <li>说明文字：写清地点、年份、谁拍的两张。</li>
+            </ul>
+          </div>
+          <div class="mini-grid">
+            <div class="mini"><b>1,846</b><span>第三轮收稿数（11月5日 22:00 统计）</span></div>
+            <div class="mini"><b>512</b><span>通过初筛作品</span></div>
+            <div class="mini"><b>38</b><span>黑白组单独排名条目</span></div>
+            <div class="mini"><b>4:5</b><span>推荐单张竖幅比例</span></div>
+            <div class="mini"><b>11-08</b><span>本轮公示日</span></div>
+            <div class="mini"><b>72 小时</b><span>争议申诉时限</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选 -->
+      <section class="sec" id="picks" aria-labelledby="picksTitle">
+        <div class="sec-head">
+          <h2 id="picksTitle">同框精选：本轮读者点开最多的六组</h2>
+          <span class="sec-note">按 11月1日—11月6日 的查看数排序</span>
+        </div>
+        <div class="grid-3">
+          <article class="pick">
+            <figure><img src="https://picsum.photos/seed/fanchai-window99/560/350" width="560" height="350" loading="lazy" alt="老楼木格窗前，1997年与2026年同一角度的两张半身照并排"></figure>
+            <div class="pick-body">
+              <span class="chip hot">本轮第一</span>
+              <h3>1997 年木格窗前的半身照复拍</h3>
+              <p>投稿人把窗棂第七格定位成对焦点，两张照片里窗框的斜影落在同一位置。说明文字只写了两行：搬家前一年，搬回后一年。</p>
+              <div class="pick-meta"><span>沈阳 · 和平区</span><span>机位还原 29/30</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <figure><img src="https://picsum.photos/seed/fanchai-schoolgate/560/350" width="560" height="350" loading="lazy" alt="乡镇中学铁门前的合影，2003年校服与今天便装对照"></figure>
+            <div class="pick-body">
+              <span class="chip new">新入榜</span>
+              <h3>乡镇中学铁门前，2003 年校服照重拍</h3>
+              <p>铁门上的「团结紧张」四个字刷过两次漆，投稿人特意找出旧字体照片比对，说明里附了刷漆年份。</p>
+              <div class="pick-meta"><span>湖南 · 耒阳</span><span>说明文字 19/20</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <figure><img src="https://picsum.photos/seed/fanchai-busstop/560/350" width="560" height="350" loading="lazy" alt="旧公交站牌下两人的等车姿势对比，站牌已换成电子屏"></figure>
+            <div class="pick-body">
+              <span class="chip">机位范例</span>
+              <h3>老公交站牌下的等车姿势，换成了电子屏</h3>
+              <p>站牌换了三代，投稿人用地面砖缝对齐机位，两张照片里第二块砖的缺角完全重合，评委拿它当教学例子。</p>
+              <div class="pick-meta"><span>重庆 · 九龙坡</span><span>机位还原 30/30</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <figure><img src="https://picsum.photos/seed/fanchai-kitchen/560/350" width="560" height="350" loading="lazy" alt="老式灶台厨房里，1994年与今天的同角度做饭照"></figure>
+            <div class="pick-body">
+              <span class="chip">年代元素满分</span>
+              <h3>灶台还在，锅换了四口：1994 年厨房同框</h3>
+              <p>瓷砖换过，灶台位置没动。背景留了铝饭盒、竹编蒸屉、老式挂钟三件，正好卡在「不超过五件」的建议线上。</p>
+              <div class="pick-meta"><span>江苏 · 扬州</span><span>年代元素 25/25</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <figure><img src="https://picsum.photos/seed/fanchai-bike/560/350" width="560" height="350" loading="lazy" alt="二八自行车旁的孩子与成年人对照，背景为老家属院"></figure>
+            <div class="pick-body">
+              <span class="chip">跨代同框</span>
+              <h3>二八自行车旁，父女两张照隔了 28 年</h3>
+              <p>车是同一辆，1998 年父亲扶着车把，2026 年女儿扶着。链盒锈迹对得上，说明里写了车架钢印号后四位。</p>
+              <div class="pick-meta"><span>河北 · 保定</span><span>人物状态 24/25</span></div>
+            </div>
+          </article>
+          <article class="pick">
+            <figure><img src="https://picsum.photos/seed/fanchai-river/560/350" width="560" height="350" loading="lazy" alt="河边堤岸上的合影，2001年荒滩与今天步道的对照"></figure>
+            <div class="pick-body">
+              <span class="chip">背景变化最大</span>
+              <h3>河堤荒滩变步道，2001 年合影原地重拍</h3>
+              <p>荒滩修成了塑胶步道，投稿人靠对岸桥梁的三个桥墩定位机位，评委给的备注是「参照物选得准」。</p>
+              <div class="pick-meta"><span>四川 · 泸州</span><span>机位还原 28/30</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="sec" id="updates" aria-labelledby="updatesTitle">
+        <div class="sec-head">
+          <h2 id="updatesTitle">投稿动态：本周改了什么、收了多少</h2>
+          <span class="sec-note">时间均在 11 月 8 日前</span>
+        </div>
+        <ul class="updates">
+          <li>
+            <time datetime="2026-11-06">11月6日</time>
+            <span><span class="u-title">第三轮收稿 1,846 份</span><br><span class="u-desc">系统退回 213 份，主因是 Exif 信息缺失与拼图接缝穿帮，退回件可当日重传。</span></span>
+            <span class="u-tag">收稿</span>
+          </li>
+          <li>
+            <time datetime="2026-11-05">11月5日</time>
+            <span><span class="u-title">评审细则第 4 条修订</span><br><span class="u-desc">「背景老物件不超过五件」由建议改为硬性要求，第六件起每件扣 2 分。公告挂在 11月5日 18:20。</span></span>
+            <span class="u-tag">规则</span>
+          </li>
+          <li>
+            <time datetime="2026-11-03">11月3日</time>
+            <span><span class="u-title">新开「黑白组」独立榜</span><br><span class="u-desc">起因是 10月19日 第二轮说明会上的分组提议，现已单独排名 38 条，彩色组不再与其混排。</span></span>
+            <span class="u-tag">榜单</span>
+          </li>
+          <li>
+            <time datetime="2026-11-01">11月1日</time>
+            <span><span class="u-title">补充材料上传口开放</span><br><span class="u-desc">同框稿可附一张现场俯拍，用来说明三脚架落点，只对通过初筛的作品开放。</span></span>
+            <span class="u-tag">功能</span>
+          </li>
+          <li>
+            <time datetime="2026-10-31">10月31日</time>
+            <span><span class="u-title">第 7 位评委加入</span><br><span class="u-desc">来自影楼的修图师陈默，负责复核拼图接缝与调色，评审表里新增「接缝处理」备注栏。</span></span>
+            <span class="u-tag">人事</span>
+          </li>
+          <li>
+            <time datetime="2026-10-26">10月26日</time>
+            <span><span class="u-title">直播讲机位，回放留存</span><br><span class="u-desc">90 分钟里用了 12 组对比图说明仰角误差，回放可在页头「参赛规矩」直达。</span></span>
+            <span class="u-tag">直播</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 分类索引 -->
+      <section class="sec" id="channels" aria-labelledby="channelsTitle">
+        <div class="sec-head">
+          <h2 id="channelsTitle">场景分类：按照片里的地点找选题</h2>
+          <span class="sec-note">括号内为该分类现存条目数</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#picks">老屋门槛与门牌 <b>214</b></a>
+          <a href="/#picks">家属院楼道 <b>188</b></a>
+          <a href="/#picks">校园铁门与操场 <b>176</b></a>
+          <a href="/#picks">照相馆布景 <b>153</b></a>
+          <a href="/#picks">老式灶台厨房 <b>147</b></a>
+          <a href="/#picks">公交站牌与站台 <b>139</b></a>
+          <a href="/#picks">河堤与桥头 <b>126</b></a>
+          <a href="/#picks">厂区大门与标语墙 <b>118</b></a>
+          <a href="/#picks">二八自行车与摩托车 <b>104</b></a>
+          <a href="/#picks">田间地头与打谷场 <b>96</b></a>
+          <a href="/#picks">小学毕业照位次 <b>88</b></a>
+          <a href="/#picks">黑白底片翻拍 <b>38</b></a>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="sec" id="deep" aria-labelledby="deepTitle">
+        <div class="deep">
+          <h2 id="deepTitle">深度解析：机位还原比「变化大」更能拿分，理由在评分表里</h2>
+          <p class="deep-lede">一个可被反驳的判断：在现行的四项评分里，故意把人物变化做夸张，收益低于把机位做准。下面用两轮的实际分数和评委原话拆开核对。</p>
+
+          <h3>判断一：机位差 10 厘米，扣分多于换一套衣服</h3>
+          <p>第二轮 380 份通过稿的初评分表里，机位还原项的均分是 21.6，年代元素项均分 19.4，人物状态项 18.1。机位分高的作品，总分普遍靠前——前 40 名里有 33 份机位项在 26 分以上。反过来，「变化大」的作品集中在人物状态项拿分，但那一项只占 25 分，且很多人同时丢了机位分。</p>
+          <p>评委周予在 10 月 26 日直播里给过一个具体比较：某组作品衣服换了整套、发型重做，但机身低了半个头，机位项给 17 分；另一组穿的是旧衣服，机位按地面砖缝对齐，给到 30 分。后者总分高 11 分。这个比较可以复核，回放第 41 分钟。</p>
+          <div class="callout"><b>可核对的拆法：</b>先看机位分是否达到 26，再看年代元素是否够三件，最后才看人物状态。三项按此顺序检查，比一上来就比「谁变化大」更接近实际榜单。</div>
+
+          <h3>判断二：黑白组单列，反而让彩色组的中游作品更难出头</h3>
+          <p>11 月 3 日新开的黑白组单独排名，初始 38 条。这事表面上是给老底片让路，实际改变了彩色组的名次结构。原因是原先黑白稿常因色调统一在「机位还原」目测里显得整齐，占了彩色组的位次；单列后，彩色组前 20 名里换上了 6 份之前排 22—28 位的作品。</p>
+          <div class="table-wrap">
+            <table>
+              <caption style="position:absolute;left:-9999px">黑白组单列前后彩色组名次对照</caption>
+              <thead><tr><th>条目</th><th>单列前名次</th><th>单列后名次</th><th>变化</th></tr></thead>
+              <tbody>
+                <tr><td>木格窗前半身照（沈阳）</td><td>5</td><td>3</td><td>↑2</td></tr>
+                <tr><td>灶台厨房同框（扬州）</td><td>23</td><td>17</td><td>↑6</td></tr>
+                <tr><td>河堤荒滩合影（泸州）</td><td>26</td><td>20</td><td>↑6</td></tr>
+                <tr><td>照相馆布景重拍（长春）</td><td>28</td><td>22</td><td>↑6</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>这个变化只发生在前 30 名的边界上，31 名之后几乎没动。所以「单列让竞争变公平」这个说法只对中游偏上的稿件成立，对靠后的稿件影响可以忽略。</p>
+
+          <h3>判断三：背景老物件卡五件，是为了让机位比对不被遮住</h3>
+          <p>11 月 5 日把「不超过五件」改成硬性要求，第六件起每件扣 2 分。公告挂出的时间是 18:20，当晚 20:00 的答疑里给的理由是：老物件堆积会改变画面重心，两张并排时眼睛先看的不是机位对齐，而是杂物。</p>
+          <div class="compare">
+            <div class="c-head c-left">旧规（10 月 31 日前）</div>
+            <div class="c-head">新规（11 月 5 日起）</div>
+            <div class="c-left"><ul><li>老物件数量为建议</li><li>超量不影响评分</li><li>评委凭印象判断画面重心</li></ul></div>
+            <div><ul><li>五件以内为硬性要求</li><li>第六件起每件扣 2 分</li><li>结算时写入评分表备注</li></ul></div>
+          </div>
+          <p>第三方转述需要分开看。有参赛者在 11 月 5 日 21:40 发帖称「这条是为某组照片临时改的」，属于推测，官方答疑里没有点名任何作品。当事人在 11 月 6 日 09:10 的回应只有一句：规则从 31 日讨论稿起就在改，与具体稿件无关。事实层面能核对的只有一条：讨论稿第 3 版在 10 月 31 日确实已把「建议」字样标黄。</p>
+
+          <h3>判断四：说明文字只值 20 分，但争议最多</h3>
+          <p>72 小时申诉窗口收到的 41 条申诉里，有 23 条围绕说明文字。典型例子是「地点写错街道名」和「年份用了农历记法」。前者依 10 月 8 日公布的复核办法可以改一次，后者不改，理由是农历转换不在活动方核验范围。这条在问答区被追问多次，回答口径一直没变。</p>
+          <p>一个可以反驳的地方：把说明文字压到 20 分，等于承认它是辅助项，可申诉集中在辅助项，说明它承担了超出分数的信任成本。若第四轮把权重提到 25 分，机位项的 30 分要不要降到 28，目前没有公开讨论。</p>
+        </div>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="sec" id="guide" aria-labelledby="guideTitle">
+        <div class="sec-head">
+          <h2 id="guideTitle">翻拍指南：从找出底片到交稿的六步</h2>
+          <span class="sec-kicker">STEP BY STEP</span>
+        </div>
+        <ol class="steps">
+          <li><b>先定参照物。</b>在老照片里找三处不会动的点：门框上沿、地面砖缝、窗棂交点。三处连成三角形，复拍时用手机取景框比对，误差控制在一个手指宽以内。</li>
+          <li><b>量机身高度。</b>老照片如果是蹲拍，复拍也蹲到膝盖离地 20 厘米上下。10 月 26 日直播举的例子是机身低了半个头，机位项直接掉 13 分。</li>
+          <li><b>扫原件留边。</b>老照片用 1200dpi 扫描，保留白边和折痕。折痕位置是判断年份的辅助线索，评委看过折痕走向有没有跨过人物脸部。</li>
+          <li><b>同姿势不追表情。</b>视线朝向要一致，表情随意。第二轮有稿件刻意模仿童年哭脸，人物状态项没加分，说明文字反而被批「表演痕迹重」。</li>
+          <li><b>背景控在五件以内。</b>挑最有年代感的三件，其余收走。11 月 5 日新规执行后，第六件起每件扣 2 分，这条比构图好坏更硬。</li>
+          <li><b>拼图按 8:5 画布。</b>左右各半、竖向 4:5 单张。接缝不要压人脸，纵向接缝落在两张照片的空白区，评审表里有专门的接缝备注栏。</li>
+        </ol>
+        <div class="callout" style="margin-top:18px"><b>检查清单（可逐项打勾）：</b>三处参照物对齐 · 机身高度记录 · 扫描保留白边 · 背景物件 ≤5 · 拼图接缝避开面部 · 说明含地点/年份/拍摄者 · Exif 未被清理 · 黑白稿投黑白组。</div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="sec faq" id="faq" aria-labelledby="faqTitle">
+        <div class="sec-head">
+          <h2 id="faqTitle">参赛常见问题</h2>
+          <span class="sec-note">据 10 月 26 日至 11 月 6 日的问答整理</span>
+        </div>
+        <details>
+          <summary>反差大赛在线的同框拼图用什么比例最稳？</summary>
+          <div class="ans">竖向 4:5 单张、左右各占一半的 8:5 画布最稳。老照片多为 6 寸扫描件，横向裁切后人物头部落在画面上三分之一处，今照用同一机位仰角 5 度以内复拍，接缝不易穿帮。</div>
+        </details>
+        <details>
+          <summary>老照片只有黑白一张，还能参加反差大赛吗？</summary>
+          <div class="ans">可以，但要保留原始底片色调。2026 年 10 月 19 日第二轮评审说明里写明：黑白组与彩色组分开排名，硬上色会被归到彩色组，反而与修图高手同场竞争。</div>
+        </details>
+        <details>
+          <summary>换装翻拍时背景里的老式物件要不要保留？</summary>
+          <div class="ans">保留三件以内最有效。评委在 10 月 26 日直播中提过，背景中的搪瓷缸、木框窗、旧挂历比新衣服更能说明时间差，超过五件则视线分散，11 月 5 日起还要扣分。</div>
+        </details>
+        <details>
+          <summary>评审到底看角度还是看故事？</summary>
+          <div class="ans">评分表公开为四项：机位还原 30 分、年代元素 25 分、人物状态 25 分、说明文字 20 分。故事只落在最后 20 分，机位错了丢分最多。</div>
+        </details>
+        <details>
+          <summary>反差大赛在线的作品可以商用吗？</summary>
+          <div class="ans">活动只取得展示授权，不代管商用。往届有咖啡馆擅自把获奖同框照印成杯垫，作者 10 月 8 日发帖维权，最终由店家撤下并补签授权。</div>
+        </details>
+        <details>
+          <summary>手机原相机和第三方相机哪个更容易过审？</summary>
+          <div class="ans">原相机直出更稳。10 月 22 日提交系统升级后，带美颜水印或机型参数被抹掉的文件会在初筛阶段退回，需重新上传原始 Exif 信息。</div>
+        </details>
+        <details>
+          <summary>同一张老照片能不能投两个分类？</summary>
+          <div class="ans">不能。每个条目只能挂一个场景分类，重复挂会被系统按提交时间保留先到的那条。要换分类得先撤稿，24 小时内可重投一次。</div>
+        </details>
+      </section>
+
+      <!-- 评论 -->
+      <section class="sec" id="comments" aria-labelledby="commentsTitle">
+        <div class="sec-head">
+          <h2 id="commentsTitle">观众评论：夸的骂的都在条目下面</h2>
+          <span class="sec-note">摘自条目留言区，保留原话</span>
+        </div>
+        <div class="comments">
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">青</span><span class="cmt-name">青石巷口</span><span class="cmt-time">11月6日</span></div>
+            <p>木格窗那组最服气的地方是窗棂影子角度完全重合，不是靠滤镜硬凑。说明只写两行还挺克制。</p>
+            <span class="refer">指向：木格窗前半身照</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">老</span><span class="cmt-name">老周不看剧</span><span class="cmt-time">11月5日</span></div>
+            <p>规则一天一个说法，11 月 5 日晚上才改五件上限，我们这些早交稿的算谁的？建议下次改规则提前一周公示。</p>
+            <span class="refer">指向：评审细则第 4 条修订</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">汽</span><span class="cmt-name">汽水要冰的</span><span class="cmt-time">11月4日</span></div>
+            <p>二八自行车那组车架钢印号太细节了，我专门截图放大看，锈迹位置确实一致，这比换一身衣服有说服力。</p>
+            <span class="refer">指向：二八自行车旁隔 28 年</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">南</span><span class="cmt-name">南门修表</span><span class="cmt-time">11月3日</span></div>
+            <p>黑白组单列以后，彩色榜前二十确实顺眼些。但我觉得黑白组作品本来就少，38 条单独排榜有点虚。</p>
+            <span class="refer">指向：黑白组独立榜</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">夜</span><span class="cmt-name">夜班小刘</span><span class="cmt-time">11月2日</span></div>
+            <p>灶台那组我打过电话问过，阿姨说铝饭盒是当年单位发的，用了十一年。这种细节写进说明比什么形容词都强。</p>
+            <span class="refer">指向：灶台厨房同框</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">路</span><span class="cmt-name">路口卖报</span><span class="cmt-time">11月1日</span></div>
+            <p>整体看下来画质都不错，但有几组拼图接缝压到耳朵了，评委好像没怎么扣分，这个标准我不太懂。</p>
+            <span class="refer">指向：评审表接缝备注栏</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">小</span><span class="cmt-name">小满不满</span><span class="cmt-time">10月31日</span></div>
+            <p>河堤那组找的三个桥墩当参照物很聪明，背景全变了还能对得齐，学了一手。</p>
+            <span class="refer">指向：河堤荒滩合影</span>
+          </article>
+          <article class="cmt">
+            <div class="cmt-top"><span class="avatar">退</span><span class="cmt-name">退稿第七次</span><span class="cmt-time">10月30日</span></div>
+            <p>我被退回两次都因为 Exif 被清理，第三人称修图软件导出来默认抹掉，系统也不提示，只在退回站内信里写一句。这体验真一般。</p>
+            <span class="refer">指向：11月6日退回 213 份</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="sec" id="news" aria-labelledby="newsTitle">
+        <div class="sec-head">
+          <h2 id="newsTitle">相关资讯：同框复拍之外发生了什么</h2>
+          <span class="sec-kicker">BRIEF</span>
+        </div>
+        <ul class="news">
+          <li>
+            <span class="date">11月7日</span>
+            <div>
+              <h3>三家地方照相馆开放老底片代扫</h3>
+              <p>沈阳、扬州、泸州各一家照相馆开始按张接老底片扫描，1200dpi 单张 18 元，保留白边与折痕。三家都表示不代做拼图，只出数字文件。</p>
+            </div>
+          </li>
+          <li>
+            <span class="date">11月4日</span>
+            <div>
+              <h3>「同一扇窗」主题延长两天</h3>
+              <p>第三轮原本 11月4日 截止，因主题限定窗景，收稿偏慢，延长至 11月6日 23:00。延长期内新增 402 份，占本轮总量两成。</p>
+            </div>
+          </li>
+          <li>
+            <span class="date">10月29日</span>
+            <div>
+              <h3>某修图软件默认压缩导致 31 份稿件被退</h3>
+              <p>一款常用修图软件在 10 月升级后默认压缩到 2MB 以下，31 位投稿人的扫描件清晰度不达标被初筛退回，重传原图后通过。</p>
+            </div>
+          </li>
+          <li>
+            <span class="date">10月24日</span>
+            <div>
+              <h3>校园铁门类条目一周增 26 份</h3>
+              <p>与毕业季回校潮相关。新增稿件里 19 份集中在 2000—2006 年拍的毕业照，拍摄位置多为校门左侧第二根立柱。</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="sec" id="reco" aria-labelledby="recoTitle">
+        <div class="sec-head">
+          <h2 id="recoTitle">相关推荐：按你想找的东西点</h2>
+        </div>
+        <div class="reco">
+          <a href="/#guide">老照片同角度复拍教程</a>
+          <a href="/#deep">机位还原扣分对照表</a>
+          <a href="/#picks">家属院楼道同框作品</a>
+          <a href="/#picks">照相馆布景重拍选题</a>
+          <a href="/#faq">黑白底片投组规则</a>
+          <a href="/#updates">第三轮收稿时间节点</a>
+          <a href="/#guide">8:5 拼图画布设置</a>
+          <a href="/#picks">公交站牌地址勘误记录</a>
+          <a href="/#comments">接缝处理争议留言汇总</a>
+          <a href="/#deep">说明文字权重讨论</a>
+        </div>
+      </section>
+
+      <!-- 补充：时间线与榜单分层 -->
+      <section class="sec" id="extra" aria-labelledby="extraTitle">
+        <div class="sec-head">
+          <h2 id="extraTitle">可信度分层与时间线：哪条能当真</h2>
+          <span class="sec-note">事实、转述、推测分开标注</span>
+        </div>
+        <div class="overview">
+          <div class="overview-lead">
+            <h3>三类信息的处理口径</h3>
+            <p><b style="color:#1f6b61">事实层：</b>公告、评分表、收稿数字。可到公告正文或统计截图核对，例如 11月5日 18:20 的规则修订。</p>
+            <p><b style="color:#8a5a12">转述层：</b>参赛者发帖、留言区说法。标明了来源账号与时间，未经官方确认，例如 11月5日 21:40 那条“临时改规则”的猜测。</p>
+            <p><b style="color:#a2372a">推测层：</b>对下一轮权重调整的判断。没有公开讨论记录，仅作参考，例如说明文字是否提到 25 分。</p>
+            <p style="margin-bottom:0">涉及争议的条目按这三层拆开写，避免把转述当结论。72 小时申诉窗口的结果另见留言区置顶。</p>
+          </div>
+          <div class="card card-pad">
+            <h3 style="font-size:15px;margin-bottom:12px;color:var(--brand)">本轮关键节点</h3>
+            <ol class="timeline" style="border-left-color:#d9d2c4">
+              <li><time datetime="2026-10-19">10月19日</time><b>第二轮评审说明会</b>提出黑白组单列，38 条先试运行。</li>
+              <li><time datetime="2026-10-26">10月26日</time><b>机位直播 90 分钟</b>12 组对比图，回放 41 分钟处讲机身高度。</li>
+              <li><time datetime="2026-10-31">10月31日</time><b>规则讨论稿第 3 版</b>「建议」字样标黄，埋下 5 日硬性化伏笔。</li>
+              <li><time datetime="2026-11-05">11月5日</time><b>细则第 4 条修订</b>五件上限变硬性，第六件起每件扣 2 分。</li>
+              <li><time datetime="2026-11-06">11月6日</time><b>第三轮截稿</b>收 1,846 份，退回 213 份，可当日重传。</li>
+              <li><time datetime="2026-11-08">11月8日</time><b>本轮结果公示</b>申诉窗口 72 小时，从公示时起算。</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="侧栏导航与榜单">
+      <nav class="card" aria-labelledby="sideNavTitle">
+        <p class="side-title" id="sideNavTitle">本页栏目</p>
+        <ul class="side-nav">
+          <li><a href="/#overview">反差活动概览</a></li>
+          <li><a href="/#picks">同框精选</a></li>
+          <li><a href="/#updates">投稿动态</a></li>
+          <li><a href="/#channels">场景分类</a></li>
+          <li><a href="/#deep">机位解析</a></li>
+          <li><a href="/#guide">翻拍指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+          <li><a href="/#extra">可信度分层</a></li>
+        </ul>
+      </nav>
+      <div class="card side-card" aria-labelledby="rankTitle">
+        <h3 id="rankTitle">本轮综合分前十（节选）</h3>
+        <ol class="rank">
+          <li><i>1</i><span>木格窗前半身照 · 沈阳 · 97 分</span></li>
+          <li><i>2</i><span>公交站牌等车姿势 · 重庆 · 96 分</span></li>
+          <li><i>3</i><span>二八自行车隔 28 年 · 保定 · 94 分</span></li>
+          <li><i>4</i><span>灶台厨房同框 · 扬州 · 93 分</span></li>
+          <li><i>5</i><span>乡镇中学铁门 · 耒阳 · 92 分</span></li>
+          <li><i>6</i><span>河堤荒滩合影 · 泸州 · 90 分</span></li>
+          <li><i>7</i><span>照相馆布景重拍 · 长春 · 89 分</span></li>
+          <li><i>8</i><span>厂区标语墙下 · 洛阳 · 88 分</span></li>
+          <li><i>9</i><span>田间打谷场合影 · 曲靖 · 86 分</span></li>
+          <li><i>10</i><span>小学毕业照位次 · 泉州 · 85 分</span></li>
+        </ol>
+      </div>
+      <div class="card card-pad" aria-label="提交提示">
+        <h3 style="font-size:15px;color:var(--brand);margin-bottom:8px">交稿前再确认一次</h3>
+        <p style="font-size:13.6px;color:var(--ink-2);margin:0">第三轮已截稿，第四轮主题定在 12 月中旬公布。现在可以整理老照片、量机位、练复拍，等主题放出再交。</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="f-brand">
+          <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="双画框反差标志">
+            <rect x="3" y="3" width="58" height="58" rx="14" fill="#3d3b63"/>
+            <rect x="14" y="17" width="17" height="30" rx="3" fill="none" stroke="#ffcf5c" stroke-width="3"/>
+            <rect x="33" y="17" width="17" height="30" rx="3" fill="none" stroke="#ff7a5c" stroke-width="3"/>
+            <circle cx="22.5" cy="32" r="4.4" fill="#ffcf5c"/>
+            <circle cx="41.5" cy="32" r="4.4" fill="#ff7a5c"/>
+          </svg>
+          <span><span class="brand-text">反差大赛在线</span><span class="brand-sub">OLD PHOTO · NOW</span></span>
+        </div>
+        <p class="f-note">按原机位复拍老照片、两张并排比对的线上活动索引。收录场景分类、评分细则、翻拍步骤与读者留言，供想交稿的人查条目、对标准。</p>
+      </div>
+      <div>
+        <h4>参赛入口</h4>
+        <ul>
+          <li><a href="/#guide">翻拍六步指南</a></li>
+          <li><a href="/#faq">评分常见问题</a></li>
+          <li><a href="/#updates">本轮时间节点</a></li>
+          <li><a href="/#extra">申诉与可信度分层</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>看作品</h4>
+        <ul>
+          <li><a href="/#picks">同框精选六组</a></li>
+          <li><a href="/#channels">场景分类索引</a></li>
+          <li><a href="/#deep">机位解析正文</a></li>
+          <li><a href="/#comments">观众评论原话</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>说明</h4>
+        <ul>
+          <li><a href="/#news">相关资讯简报</a></li>
+          <li><a href="/#reco">相关推荐标签</a></li>
+          <li><a href="/#overview">四项评分概览</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>文中条目、分数、收稿数为示例数据，用于展示内容结构；规则与时间节点据 10 月 19 日至 11 月 8 日公告整理。</span>
+      <span>页面内容更新：2026年11月8日 · 对应正文「投稿动态」与「可信度分层」两节</span>
+      <span>© 2026 反差大赛在线 · 展示授权范围仅限本活动</span>
+    </div>
+  </div>
+</footer>
+
+<button class="top-btn" id="topBtn" aria-label="回到顶部">
+  <svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M10 16V5M5 10l5-5 5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  var topBtn=document.getElementById('topBtn');
+  var form=document.getElementById('searchForm');
+  var input=document.getElementById('q');
+  var feedback=document.getElementById('searchFeedback');
+
+  if(menuBtn&&nav){
+    menuBtn.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=1024){
+        nav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  window.addEventListener('scroll',function(){
+    if(window.scrollY>420){topBtn.classList.add('show');}
+    else{topBtn.classList.remove('show');}
+  },{passive:true});
+
+  topBtn.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var secs=Array.prototype.slice.call(document.querySelectorAll('main section[id]'));
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('.side-nav a'));
+  var ticking=false;
+  function highlight(){
+    var offset=parseInt(getComputedStyle(document.documentElement).getPropertyValue('--sticky'))||96;
+    var pos=window.scrollY+offset+24;
+    var current=secs[0]?secs[0].id:null;
+    secs.forEach(function(s){ if(s.offsetTop<=pos){current=s.id;} });
+    sideLinks.forEach(function(a){
+      a.classList.toggle('active',a.getAttribute('href')==='#'+current||a.getAttribute('href')==='/'+'#'+current);
+    });
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){
+    if(!ticking){window.requestAnimationFrame(highlight);ticking=true;}
+  },{passive:true});
+  highlight();
+
+  // 本地查找：在页面文本里检索关键词
+  var index=[];
+  Array.prototype.forEach.call(document.querySelectorAll('main section[id], .pick, .updates li, .faq details, .news li, .cmt'),function(el){
+    var text=el.textContent.replace(/\s+/g,' ').trim();
+    var id='';
+    var p=el; while(p&&!p.id){p=p.parentElement;}
+    if(el.id){id=el.id;} else if(p){id=p.id;}
+    index.push({text:text,id:id,el:el});
+  });
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var q=input.value.trim().toLowerCase();
+    if(!q){feedback.classList.remove('on');return;}
+    var hits=index.filter(function(item){return item.text.toLowerCase().indexOf(q)>-1;});
+    if(hits.length===0){
+      feedback.textContent='站内没有找到「'+input.value.trim()+'」，可以试试「木格窗」「黑白组」「拼图比例」等具体词。';
+      feedback.classList.add('on');
+      return;
+    }
+    feedback.textContent='找到 '+hits.length+' 处相关内容，已跳到第一条。';
+    feedback.classList.add('on');
+    var first=hits[0].el;
+    var target=first.closest('.pick, details, li')||first;
+    target.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  input.addEventListener('input',function(){
+    if(!input.value.trim()){feedback.classList.remove('on');}
+  });
+})();
+</script>
+</body>
+                                                                         </html>
