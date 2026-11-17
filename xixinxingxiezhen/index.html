@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>西西女性写真-人像风格与拍摄指南</title>
+<meta name="description" content="西西女性写真聚焦女性人像摄影：从胶片质感、自然光棚拍到复古港风，整理拍摄方案、造型清单、选片修图流程与真实客片反馈，帮助你在风格与预算之间做出具体取舍。">
+<meta name="keywords" content="西西女性写真">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23b5495b'/%3E%3Ccircle cx='32' cy='26' r='11' fill='%23f6e7d8'/%3E%3Cpath d='M14 56c3-12 10-18 18-18s15 6 18 18' fill='%23f6e7d8'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#2b2320;
+  --ink-2:#5a4d47;
+  --ink-3:#8a7a72;
+  --paper:#fbf7f2;
+  --paper-2:#f3ebe1;
+  --line:#e2d6c8;
+  --brand:#b5495b;
+  --brand-d:#8e3345;
+  --accent:#3f6b5f;
+  --gold:#c08a3e;
+  --radius:14px;
+  --radius-s:8px;
+  --shadow:0 6px 22px rgba(70,48,40,.10);
+  --shadow-s:0 2px 8px rgba(70,48,40,.07);
+  --fs-h1:clamp(1.7rem,3.6vw,2.6rem);
+  --fs-h2:clamp(1.28rem,2.2vw,1.6rem);
+  --fs-h3:1.06rem;
+  --fs-body:1rem;
+  --gap:clamp(16px,2.4vw,28px);
+  --announce-h:38px;
+  --header-h:62px;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--announce-h) + var(--header-h) + 12px)}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",Georgia,"Microsoft YaHei",serif;
+  font-size:var(--fs-body);line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-d);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3{line-height:1.4;margin:0 0 .5em;font-weight:700}
+p{margin:0 0 1em}
+ul,ol{margin:0 0 1em;padding-left:1.3em}
+button{font-family:inherit;font-size:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px;border-radius:4px}
+
+/* ---------- 吸顶区 ---------- */
+.announce{
+  position:sticky;top:0;z-index:60;height:var(--announce-h);
+  background:linear-gradient(90deg,var(--brand-d),var(--brand));
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-size:.82rem;letter-spacing:.02em;
+}
+.announce span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;padding:0 12px}
+.announce b{font-weight:700}
+.announce a{color:#ffe3b5;text-decoration:underline}
+.site-header{
+  position:sticky;top:var(--announce-h);z-index:55;
+  background:rgba(251,247,242,.94);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);height:var(--header-h);
+}
+.header-inner{
+  max-width:var(--maxw);margin:0 auto;height:100%;padding:0 clamp(12px,3vw,26px);
+  display:flex;align-items:center;gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand-mark{width:34px;height:34px;flex-shrink:0}
+.brand-name{font-size:1.02rem;font-weight:700;letter-spacing:.04em;color:var(--ink)}
+.main-nav{display:flex;gap:2px;flex:1;flex-wrap:nowrap;overflow:hidden}
+.main-nav a{
+  padding:8px 10px;border-radius:var(--radius-s);color:var(--ink-2);
+  font-size:.86rem;white-space:nowrap;text-decoration:none;
+}
+.main-nav a:hover{background:var(--paper-2);color:var(--brand-d);text-decoration:none}
+.main-nav a.active{color:var(--brand-d);font-weight:700;box-shadow:inset 0 -2px 0 var(--brand)}
+.header-acts{display:flex;align-items:center;gap:10px;margin-left:auto}
+.search-wrap{position:relative}
+.search-wrap input{
+  width:150px;padding:7px 30px 7px 11px;border:1px solid var(--line);
+  border-radius:20px;background:#fff;font-size:.84rem;color:var(--ink);
+  transition:width .2s ease,border-color .2s ease;
+}
+.search-wrap input:focus{width:190px;border-color:var(--brand);outline:none;box-shadow:0 0 0 3px rgba(181,73,91,.12)}
+.search-wrap .sicon{position:absolute;right:9px;top:50%;transform:translateY(-50%);width:15px;height:15px;opacity:.5;pointer-events:none}
+.search-hint{
+  position:absolute;top:calc(100% + 6px);right:0;width:230px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius-s);box-shadow:var(--shadow);
+  font-size:.82rem;padding:8px 11px;display:none;color:var(--ink-2);line-height:1.6;
+}
+.search-hint.show{display:block}
+.btn-menu{display:none;background:none;border:1px solid var(--line);border-radius:var(--radius-s);padding:6px 9px;color:var(--ink-2)}
+.btn-menu svg{width:18px;height:18px;display:block}
+.mobile-menu{
+  display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow);padding:10px 16px 16px;
+}
+.mobile-menu.open{display:block}
+.mobile-menu a{display:block;padding:9px 4px;border-bottom:1px dashed var(--line);color:var(--ink-2);font-size:.9rem}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(181,73,91,.14),transparent 42%),
+    radial-gradient(circle at 10% 88%,rgba(63,107,95,.12),transparent 46%),
+    linear-gradient(180deg,#fdf9f4,#f6eee4);
+  border-bottom:1px solid var(--line);
+}
+.hero-grid{
+  max-width:var(--maxw);margin:0 auto;padding:clamp(28px,5vw,60px) clamp(16px,3vw,26px);
+  display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(20px,4vw,44px);align-items:center;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.16em;
+  color:var(--brand-d);border:1px solid rgba(181,73,91,.35);border-radius:20px;
+  padding:4px 13px;margin-bottom:16px;background:rgba(255,255,255,.55);
+}
+.hero-kicker::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand)}
+h1{font-size:var(--fs-h1);letter-spacing:.03em;color:var(--ink);margin-bottom:14px}
+h1 em{font-style:normal;color:var(--brand-d)}
+.hero-lead{color:var(--ink-2);font-size:1.02rem;max-width:36em;margin-bottom:22px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.btn{
+  display:inline-flex;align-items:center;gap:7px;padding:11px 22px;border-radius:26px;
+  font-size:.92rem;font-weight:600;text-decoration:none;transition:transform .18s ease,box-shadow .18s ease;
+  border:1px solid transparent;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 5px 16px rgba(181,73,91,.28)}
+.btn-ghost{background:rgba(255,255,255,.7);border-color:var(--line);color:var(--ink-2)}
+.hero-stats{display:flex;flex-wrap:wrap;gap:clamp(14px,3vw,34px);border-top:1px solid var(--line);padding-top:18px}
+.hero-stats div{min-width:78px}
+.hero-stats b{display:block;font-size:1.34rem;color:var(--brand-d);line-height:1.2;font-variant-numeric:tabular-nums}
+.hero-stats span{font-size:.78rem;color:var(--ink-3);letter-spacing:.05em}
+.hero-art{position:relative;aspect-ratio:5/5.6;max-width:420px;margin-left:auto;width:100%}
+.hero-art svg{width:100%;height:100%;display:block}
+
+/* ---------- 布局 ---------- */
+.layout{
+  max-width:var(--maxw);margin:0 auto;
+  padding:clamp(30px,5vw,56px) clamp(16px,3vw,26px) 10px;
+  display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:clamp(22px,3.4vw,44px);
+  align-items:start;
+}
+.side-col{
+  position:sticky;top:calc(var(--announce-h) + var(--header-h) + 16px);
+  display:flex;flex-direction:column;gap:20px;font-size:.9rem;
+}
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:16px 17px;box-shadow:var(--shadow-s)}
+.side-card h3{font-size:.92rem;margin:0 0 10px;color:var(--ink);letter-spacing:.04em}
+.side-card h3::before{content:"—";color:var(--brand);margin-right:6px}
+.toc-nav a{
+  display:block;padding:6px 9px;border-radius:6px;color:var(--ink-2);font-size:.85rem;
+  border-left:2px solid transparent;text-decoration:none;transition:background .15s,color .15s;
+}
+.toc-nav a:hover{background:var(--paper-2);text-decoration:none}
+.toc-nav a.current{background:rgba(181,73,91,.08);border-left-color:var(--brand);color:var(--brand-d);font-weight:700}
+.side-list{list-style:none;padding:0;margin:0}
+.side-list li{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;gap:8px;justify-content:space-between;color:var(--ink-2);font-size:.84rem}
+.side-list li:last-child{border-bottom:0}
+.side-list .num{color:var(--brand);font-variant-numeric:tabular-nums;font-weight:700}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:7px}
+.tag-cloud a{
+  font-size:.78rem;padding:4px 10px;border-radius:20px;background:var(--paper-2);
+  border:1px solid var(--line);color:var(--ink-2);text-decoration:none;transition:background .15s;
+}
+.tag-cloud a:hover{background:var(--brand);border-color:var(--brand);color:#fff;text-decoration:none}
+.side-note{font-size:.86rem;color:var(--ink-2);line-height:1.75}
+.side-note strong{color:var(--brand-d)}
+
+/* ---------- 板块通用 ---------- */
+.section{margin-bottom:clamp(38px,6vw,66px);scroll-margin-top:0}
+.section-head{margin-bottom:20px;border-bottom:1px solid var(--line);padding-bottom:12px;display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px}
+.section-head h2{font-size:var(--fs-h2);margin:0;letter-spacing:.02em}
+.section-head h2 small{font-size:.72rem;font-weight:400;color:var(--ink-3);letter-spacing:.18em;margin-left:8px;vertical-align:middle}
+.section-head p{margin:0;color:var(--ink-3);font-size:.84rem;flex:1;min-width:180px;line-height:1.6}
+.section-body p:last-child{margin-bottom:0}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.ov-item{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;box-shadow:var(--shadow-s)}
+.ov-item h3{font-size:.98rem;margin:0 0 6px;color:var(--brand-d)}
+.ov-item p{font-size:.88rem;color:var(--ink-2);margin:0;line-height:1.75}
+
+/* 精选卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.pick-card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  box-shadow:var(--shadow-s);display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;
+}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.pick-card img{width:100%;height:150px;object-fit:cover;background:var(--paper-2)}
+.pick-card .pc-body{padding:13px 15px 15px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pick-card .pc-meta{font-size:.74rem;color:var(--ink-3);letter-spacing:.03em}
+.pick-card h3{font-size:.98rem;margin:0;line-height:1.5}
+.pick-card p{font-size:.84rem;color:var(--ink-2);margin:0;line-height:1.7}
+.pick-card .pc-tag{margin-top:auto;font-size:.75rem;color:var(--accent);font-weight:600}
+.pick-card.feature{grid-column:span 2;flex-direction:row}
+.pick-card.feature img{width:44%;height:auto;min-height:180px}
+.pick-card.feature .pc-body{padding:18px 20px}
+
+/* 最新更新紧凑列表 */
+.update-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+.update-list li{
+  display:grid;grid-template-columns:78px 1fr auto;gap:12px;align-items:baseline;
+  padding:12px 2px;border-bottom:1px solid var(--line);
+}
+.update-list time{font-size:.78rem;color:var(--brand-d);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.update-list a{font-size:.92rem;color:var(--ink);font-weight:600;line-height:1.6}
+.update-list span{font-size:.78rem;color:var(--ink-3);white-space:nowrap}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cat-item{
+  display:block;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);
+  padding:13px 14px;text-decoration:none;transition:border-color .15s,background .15s;
+}
+.cat-item:hover{border-color:var(--brand);background:#fffdfb;text-decoration:none}
+.cat-item b{display:block;font-size:.93rem;color:var(--ink);margin-bottom:3px}
+.cat-item em{font-style:normal;font-size:.76rem;color:var(--ink-3)}
+
+/* 深度解析 */
+.deep{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:clamp(18px,3vw,32px);box-shadow:var(--shadow-s)}
+.deep h3{font-size:var(--fs-h3);margin-top:1.5em;color:var(--brand-d);padding-left:12px;border-left:3px solid var(--brand)}
+.deep h3:first-of-type{margin-top:0}
+.deep p{font-size:.95rem;color:var(--ink-2)}
+.deep strong{color:var(--ink)}
+.deep blockquote{
+  margin:20px 0;padding:14px 20px;background:var(--paper-2);border-left:3px solid var(--gold);
+  border-radius:0 var(--radius-s) var(--radius-s) 0;font-size:.92rem;color:var(--ink);
+}
+.deep blockquote footer{font-size:.76rem;color:var(--ink-3);margin-top:6px}
+.compare-table{width:100%;border-collapse:collapse;font-size:.85rem;margin:16px 0 20px}
+.compare-table th,.compare-table td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+.compare-table th{background:var(--paper-2);color:var(--ink);font-weight:700}
+.compare-table td{color:var(--ink-2)}
+.compare-table tr:nth-child(even) td{background:#fdfaf6}
+.timeline{list-style:none;padding:0;margin:18px 0}
+.timeline li{position:relative;padding:0 0 16px 22px;border-left:2px solid var(--line);font-size:.9rem;color:var(--ink-2)}
+.timeline li:last-child{border-left-color:transparent;padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--brand);border:2px solid #fff;box-shadow:0 0 0 1px var(--brand)}
+.timeline b{display:block;color:var(--ink);font-size:.88rem;margin-bottom:2px}
+
+/* 体验指南步骤 */
+.steps{counter-reset:step;list-style:none;padding:0;margin:0;display:grid;gap:13px}
+.steps li{
+  counter-increment:step;position:relative;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);padding:15px 18px 15px 60px;box-shadow:var(--shadow-s);
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:16px;top:15px;
+  font-size:1.1rem;font-weight:700;color:var(--brand);font-variant-numeric:tabular-nums;letter-spacing:.02em;
+}
+.steps b{display:block;font-size:.95rem;color:var(--ink);margin-bottom:3px}
+.steps p{font-size:.86rem;color:var(--ink-2);margin:0;line-height:1.75}
+
+/* FAQ */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{
+  padding:14px 34px 14px 2px;font-size:.94rem;font-weight:600;color:var(--ink);
+  cursor:pointer;list-style:none;position:relative;transition:color .15s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:6px;top:12px;font-size:1.15rem;color:var(--brand);
+  font-weight:400;transition:transform .2s ease;
+}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{color:var(--brand-d)}
+.faq details p{font-size:.88rem;color:var(--ink-2);margin:0 0 15px;padding-right:20px;line-height:1.8}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.comment{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;box-shadow:var(--shadow-s);font-size:.88rem;color:var(--ink-2)}
+.comment-head{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.avatar{width:28px;height:28px;border-radius:50%;background:var(--paper-2);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:700;color:var(--brand-d);flex-shrink:0}
+.comment-head b{font-size:.84rem;color:var(--ink)}
+.comment-head time{font-size:.72rem;color:var(--ink-3);margin-left:auto}
+.comment p{margin:0;line-height:1.75}
+.comment .target{color:var(--brand-d);font-weight:600}
+
+/* 资讯 */
+.news-grid{display:grid;gap:12px}
+.news-item{display:grid;grid-template-columns:auto 1fr;gap:14px;background:#fff;border:1px solid var(--line);border-radius:var(--radius-s);padding:13px 16px;box-shadow:var(--shadow-s)}
+.news-date{font-size:.78rem;color:var(--brand-d);font-weight:700;letter-spacing:.02em;padding-top:2px;white-space:nowrap}
+.news-item h3{font-size:.92rem;margin:0 0 3px;color:var(--ink)}
+.news-item p{font-size:.83rem;color:var(--ink-3);margin:0;line-height:1.7}
+
+/* 相关推荐 标签索引 */
+.rec-tags{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}
+.rec-tags a{
+  padding:7px 14px;border-radius:22px;background:#fff;border:1px solid var(--line);
+  font-size:.85rem;color:var(--ink-2);text-decoration:none;transition:all .15s;
+}
+.rec-tags a:hover{border-color:var(--brand);color:var(--brand-d);text-decoration:none;background:#fffaf8}
+
+/* 可信度分层 */
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.trust{background:#fff;border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:var(--radius-s);padding:14px 16px}
+.trust.t2{border-top-color:var(--gold)}
+.trust.t3{border-top-color:var(--ink-3)}
+.trust b{display:block;font-size:.92rem;margin-bottom:5px}
+.trust span{font-size:.74rem;letter-spacing:.06em;color:var(--ink-3);display:block;margin-bottom:6px}
+.trust p{font-size:.84rem;color:var(--ink-2);margin:0;line-height:1.7}
+
+/* 引语卡 */
+.quote-panel{
+  background:linear-gradient(135deg,#fff9f3,#f7ece2);border:1px solid var(--line);
+  border-radius:var(--radius);padding:clamp(18px,3vw,28px);position:relative;
+}
+.quote-panel::before{content:"“";font-size:3.4rem;color:rgba(181,73,91,.22);position:absolute;left:14px;top:2px;font-family:Georgia,serif;line-height:1}
+.quote-panel blockquote{margin:0 0 10px;padding-left:26px;font-size:1rem;color:var(--ink);line-height:1.8}
+.quote-panel p{margin:0;padding-left:26px;font-size:.82rem;color:var(--ink-3)}
+
+/* 页脚 */
+.site-footer{background:#2b2320;color:#cbbcb1;margin-top:clamp(30px,5vw,60px);font-size:.86rem}
+.footer-inner{max-width:var(--maxw);margin:0 auto;padding:clamp(30px,5vw,48px) clamp(16px,3vw,26px) 24px}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:clamp(18px,3vw,34px);margin-bottom:30px}
+.footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.footer-brand svg{width:30px;height:30px}
+.footer-brand b{font-size:1.02rem;color:#fff;letter-spacing:.04em}
+.footer-pos{color:#a8988e;line-height:1.8;font-size:.84rem}
+.footer-col h4{color:#fff;font-size:.86rem;margin:0 0 10px;letter-spacing:.06em;font-weight:700}
+.footer-col a{display:block;color:#a8988e;padding:3px 0;font-size:.83rem;text-decoration:none}
+.footer-col a:hover{color:#ffe3b5;text-decoration:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:16px;display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:space-between;font-size:.78rem;color:#8a7a72}
+.footer-bottom p{margin:0}
+.footer-note{color:#8a7a72;font-size:.76rem;margin-top:10px;line-height:1.7}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:none;box-shadow:0 6px 18px rgba(181,73,91,.4);
+  display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;
+  transform:translateY(10px);transition:opacity .22s ease,transform .22s ease;
+}
+#toTop.show{opacity:1;pointer-events:auto;transform:translateY(0)}
+#toTop svg{width:20px;height:20px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .layout{grid-template-columns:minmax(0,1fr) 250px;gap:24px}
+  .cat-grid{grid-template-columns:repeat(2,1fr)}
+  .header-inner{gap:12px}
+  .main-nav a{padding:8px 7px;font-size:.82rem}
+}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .side-col{position:static;order:2}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-art{max-width:300px;margin:0 auto;order:-1}
+  .main-nav,.header-acts .search-wrap{display:none}
+  .btn-menu{display:block}
+  .header-acts{display:flex}
+  .pick-card.feature{flex-direction:column}
+  .pick-card.feature img{width:100%;height:180px;min-height:0}
+  .trust-grid{grid-template-columns:1fr}
+  .footer-top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:560px){
+  :root{--announce-h:34px;--header-h:56px}
+  .announce{font-size:.72rem}
+  .overview-grid,.pick-grid,.comments{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:1fr 1fr}
+  .update-list li{grid-template-columns:70px 1fr;gap:6px 10px}
+  .update-list span{grid-column:2;font-size:.74rem}
+  .deep{padding:17px 15px}
+  .footer-top{grid-template-columns:1fr}
+  .steps li{padding-left:52px}
+  .cat-item b{font-size:.86rem}
+  #toTop{right:12px;bottom:14px;width:40px;height:40px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:.001ms!important;animation-duration:.001ms!important}
+  .pick-card:hover,.btn:hover{transform:none}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"西西女性写真",
+  "description":"女性人像写真风格、拍摄方案与选片修图指南",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"拍一套女性写真大概需要多长时间？","acceptedAnswer":{"@type":"Answer","text":"室内棚拍通常2至3小时，含化妆造型1小时、实拍1.5小时；外景因转场和光线等待，一般排4小时以上。若换三套造型，多数工作室给到的拍摄时间是4至5小时。"}},
+    {"@type":"Question","name":"胶片质感的写真一定要用胶片机拍吗？","acceptedAnswer":{"@type":"Answer","text":"不一定。Portra 400 的色彩偏向暖调高宽容度，数码相机加后期模拟也能接近；但胶片的颗粒分布和过曝滚降靠算法难以完全复刻，成片放大到60厘米以上差别会变明显。"}},
+    {"@type":"Question","name":"选片时该按什么标准筛？","acceptedAnswer":{"@type":"Answer","text":"先锁定表情自然的，再比较同一姿势中眼神和手部处理，最后按相册页数取不同景别的组合。30张初选里通常只留12至18张，重复构图超过三张就要做减法。"}},
+    {"@type":"Question","name":"自然光棚拍和小型影棚布光的差别在哪？","acceptedAnswer":{"@type":"Answer","text":"自然光棚拍的窗光方向固定，人物面部过渡柔和，阴天色温约5500K；小型影棚用柔光箱和反光板，能压暗背景突出重点，但需要控制主副光比，否则鼻影和颈纹会更清楚。"}},
+    {"@type":"Question","name":"外景写真遇到阴天还能拍出通透感吗？","acceptedAnswer":{"@type":"Answer","text":"可以。阴天是天然的大柔光箱，适合浅色系和低对比复古调；关键是把背景中高亮的天空面积压到画面三成以内，靠前景树影或墙面制造层次，后期再补一点对比度。"}}
+  ]
+}
+</script>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="announce" role="region" aria-label="更新公告">
+  <span><b>西西女性写真</b> · 11月7日更新：秋冬窗光棚拍方案（含三套造型清单）· 双十一档期 11月11日—20日 开放预约 · <a href="/#updates">查看更新记录</a></span>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/#top" aria-label="西西女性写真 首页">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="14" fill="#b5495b"/>
+        <circle cx="32" cy="25" r="10.5" fill="#f6e7d8"/>
+        <path d="M13 56c3-12 10-18 19-18s16 6 19 18" fill="#f6e7d8"/>
+        <path d="M45 14l2.4 4.2L52 20.6l-4.6 2.3L45 27l-2.4-4.1L38 20.6l4.6-2.4z" fill="#ffe3b5"/>
+      </svg>
+      <span class="brand-name">西西女性写真</span>
+    </a>
+    <nav class="main-nav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#picks">精选客片</a>
+      <a href="/#updates">最新更新</a>
+      <a href="/#cats">风格分类</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">拍摄指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#trust">可信度</a>
+    </nav>
+    <div class="header-acts">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="搜索风格 / 造型 / 场景" aria-label="站内搜索">
+        <svg class="sicon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <div class="search-hint" id="searchHint" role="status" aria-live="polite"></div>
+      </div>
+      <button class="btn-menu" id="menuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="打开导航菜单">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/#overview">领域概览</a>
+    <a href="/#picks">精选客片</a>
+    <a href="/#updates">最新更新</a>
+    <a href="/#cats">风格分类</a>
+    <a href="/#deep">深度解析</a>
+    <a href="/#guide">拍摄指南</a>
+    <a href="/#faq">常见问题</a>
+    <a href="/#comments">用户评论</a>
+    <a href="/#news">相关资讯</a>
+    <a href="/#recs">相关推荐</a>
+    <a href="/#trust">可信度分层</a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-grid">
+    <div>
+      <span class="hero-kicker">女性人像 · 风格与实拍档案</span>
+      <h1 id="hero-title">西西女性写真</h1>
+      <p class="hero-lead">把一次拍摄拆成看得见的步骤：从选风格、定造型、控光线，到选片和修图验收。收录胶片质感、自然窗光、复古港风、新中式四类方案的实拍参数与客片清单，给正在比价和挑风格的人一份能对着核对的参考。</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="/#picks">看本周精选客片</a>
+        <a class="btn btn-ghost" href="/#guide">读拍摄流程指南</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>11</b><span>个内容板块</span></div>
+        <div><b>46</b><span>组实拍样本</span></div>
+        <div><b>9</b><span>类造型清单</span></div>
+        <div><b>4</b><span>档预算区间</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 400 448" role="img" aria-label="窗光人像构图示意">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f7d9c9"/><stop offset="1" stop-color="#f1c2b0"/>
+          </linearGradient>
+          <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f6ece1"/><stop offset="1" stop-color="#e8d6c4"/>
+          </linearGradient>
+          <radialGradient id="glow" cx="0.68" cy="0.3" r="0.6">
+            <stop offset="0" stop-color="#fff4e2" stop-opacity=".95"/><stop offset="1" stop-color="#fff4e2" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="448" rx="18" fill="url(#wall)"/>
+        <rect x="196" y="34" width="176" height="252" rx="6" fill="url(#sky)" opacity=".92"/>
+        <rect x="206" y="44" width="76" height="112" fill="#fff6ea" opacity=".55"/>
+        <rect x="292" y="44" width="70" height="112" fill="#fff6ea" opacity=".42"/>
+        <rect x="206" y="166" width="76" height="110" fill="#fff6ea" opacity=".35"/>
+        <rect x="292" y="166" width="70" height="110" fill="#fff6ea" opacity=".28"/>
+        <rect width="400" height="448" fill="url(#glow)"/>
+        <path d="M0 372c62-16 108-4 156 14s96 22 152 4 72-14 92-6v64H0z" fill="#d8b89e" opacity=".5"/>
+        <ellipse cx="176" cy="404" rx="128" ry="26" fill="#c9a68c" opacity=".35"/>
+        <path d="M118 448c6-72 28-116 58-116s52 44 58 116z" fill="#a8636c"/>
+        <path d="M146 356c10-16 24-24 30-24s20 8 30 24c-8 12-18 18-30 18s-22-6-30-18z" fill="#f1d3c1"/>
+        <circle cx="176" cy="298" r="52" fill="#f6ddc9"/>
+        <path d="M124 300c0-38 22-64 52-64s52 26 52 64c-6-18-18-28-26-30-10 14-38 22-52 24-12 2-22 4-26 6z" fill="#40302b"/>
+        <circle cx="158" cy="300" r="4.4" fill="#3a2b26"/>
+        <circle cx="194" cy="300" r="4.4" fill="#3a2b26"/>
+        <path d="M166 322c4 4 16 4 20 0" stroke="#b98a76" stroke-width="2.6" fill="none" stroke-linecap="round"/>
+        <path d="M148 372c8-10 48-10 56 0" stroke="#f3ddcd" stroke-width="0" fill="none"/>
+        <rect x="34" y="300" width="56" height="86" rx="4" fill="#e8d3bf" opacity=".9"/>
+        <ellipse cx="62" cy="300" rx="16" ry="10" fill="#b5495b" opacity=".55"/>
+        <path d="M40 300c0-16 10-24 22-24s22 8 22 24z" fill="#7f9b7a" opacity=".8"/>
+        <rect x="286" y="352" width="86" height="8" rx="4" fill="#d3b39a" opacity=".7"/>
+        <circle cx="336" cy="330" r="22" fill="#e4c6ae" opacity=".7"/>
+        <path d="M252 246c12 10 26 14 38 12" stroke="#c08a3e" stroke-width="2.4" fill="none" opacity=".55" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="layout">
+  <div class="main-col">
+
+    <!-- 1 领域概览 -->
+    <section class="section" id="overview" aria-labelledby="h-overview">
+      <div class="section-head">
+        <h2 id="h-overview">领域概览 <small>WHAT IT IS</small></h2>
+        <p>四类主流拍法各自解决什么问题</p>
+      </div>
+      <div class="section-body">
+        <p>女性写真的门类比想象中细。按成片用途分，可以归到纪念、社交头像、婚礼前预热和职业形象四个方向；按拍摄环境分，则是自然光棚拍、人工布光影棚、城市外景和居家纪实。2026年下半年在一线城市工作室接单结构中，自然光棚拍占比约四成，室内人工布光约三成，剩下三成摊给外景和居家。</p>
+        <div class="overview-grid">
+          <div class="ov-item">
+            <h3>自然光窗光棚拍</h3>
+            <p>用大面窗和白色反光板做主光，阴天色温约5500K，成片过渡柔和。适合皮肤敏感、不爱厚妆的人。实拍有效时间集中在上午9至11点，午后光比会变硬。</p>
+          </div>
+          <div class="ov-item">
+            <h3>人工布光影棚</h3>
+            <p>柔光箱做主光、条形光做轮廓，主副光比常见1:2到1:3。可控性强，深色背景能压出通透感，缺点是鼻影、颈纹和腋下褶皱会被放大。</p>
+          </div>
+          <div class="ov-item">
+            <h3>城市外景写真</h3>
+            <p>街道、天台、旧厂房是主要场地，光线随时间和天气变动。拍摄窗口通常只有日出后两小时和日落前两小时，转场成本要提前算进行程。</p>
+          </div>
+          <div class="ov-item">
+            <h3>居家纪实人像</h3>
+            <p>在自家或民宿拍摄，穿着以针织、棉麻居家服为主。优点是放松，缺点是对房间进光量和杂物整理要求高，落地窗朝南的房子最稳。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 精选内容推荐 -->
+    <section class="section" id="picks" aria-labelledby="h-picks">
+      <div class="section-head">
+        <h2 id="h-picks">精选内容推荐 <small>EDITOR'S PICK</small></h2>
+        <p>本周从46组客片里挑出的5组</p>
+      </div>
+      <div class="pick-grid">
+        <article class="pick-card feature">
+          <img src="https://picsum.photos/seed/xixi-windowlight/760/420" width="760" height="420" loading="lazy" alt="阴天窗光棚拍人像，浅杏色针织衫配米白背景">
+          <div class="pc-body">
+            <span class="pc-meta">11月5日 · 自然窗光 · 4套造型</span>
+            <h3>阴天窗光棚拍：55mm定焦下的低对比复古调</h3>
+            <p>化妆师用暖杏色腮红压住冷天的肤色发灰，主光只靠侧窗，白色反光板把暗部提亮一档半。成片肤色没有明显磨皮痕迹，针织衫的罗纹保留了细节。这组最值得参考的是逆光下的发丝处理，发尾高光没有过曝。</p>
+            <span class="pc-tag">标签 · 低对比复古 / 窗光人像</span>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/xixi-hongkong/480/300" width="480" height="300" loading="lazy" alt="复古港风写真，红色丝绒外套配深色背景和暖黄轮廓光">
+          <div class="pc-body">
+            <span class="pc-meta">11月3日 · 复古港风</span>
+            <h3>复古港风红丝绒：暖黄轮廓光怎么打</h3>
+            <p>背景压到深褐，轮廓用3200K暖光打出边缘，面部保留冷调。红色丝绒容易吸光，摄影师加了侧面补光才把绒面质感提起来。</p>
+            <span class="pc-tag">标签 · 复古港风 / 暖调棚拍</span>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/xixi-newchinese/480/300" width="480" height="300" loading="lazy" alt="新中式女性写真，青灰旗袍与竹影屏风前侧身站立">
+          <div class="pc-body">
+            <span class="pc-meta">10月30日 · 新中式</span>
+            <h3>新中式青灰旗袍：屏风与竹影的布景逻辑</h3>
+            <p>屏风放在人物斜后方45度，竹影投影落在左肩，层次立刻出来。旗袍选青灰而非正红，是为了避开影楼常见的喜庆套路。</p>
+            <span class="pc-tag">标签 · 新中式 / 旗袍写真</span>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/xixi-rooftop/480/300" width="480" height="300" loading="lazy" alt="城市天台日落写真，逆光下的侧脸轮廓与远处楼群">
+          <div class="pc-body">
+            <span class="pc-meta">10月27日 · 城市外景</span>
+            <h3>天台日落逆光：等17:40那十分钟</h3>
+            <p>太阳落到楼群高度后，光线从硬变软只有不到十二分钟。这组抓住的是日落前十分钟的侧逆光，发丝边缘泛金，面部靠反光板补回大半档。</p>
+            <span class="pc-tag">标签 · 城市外景 / 逆光人像</span>
+          </div>
+        </article>
+
+        <article class="pick-card">
+          <img src="https://picsum.photos/seed/xixi-home/480/300" width="480" height="300" loading="lazy" alt="居家纪实写真，穿米色针织衫坐在地毯上翻书">
+          <div class="pc-body">
+            <span class="pc-meta">10月22日 · 居家纪实</span>
+            <h3>居家针织衫：用一扇南向窗撑起整组</h3>
+            <p>没有补光灯，靠南向落地窗的漫射光。拍摄前把茶几上的杂物清空，只留一本翻开的书和半杯温水，画面反而更耐看。</p>
+            <span class="pc-tag">标签 · 居家纪实 / 生活感写真</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3 最新更新 -->
+    <section class="section" id="updates" aria-labelledby="h-updates">
+      <div class="section-head">
+        <h2 id="h-updates">最新更新 <small>UPDATES</small></h2>
+        <p>近四周新增与修订条目</p>
+      </div>
+      <ul class="update-list">
+        <li><time datetime="2026-11-07">11月7日</time><a href="/#deep">秋冬窗光方案补充阴天白平衡校准段</a><span>深度解析</span></li>
+        <li><time datetime="2026-11-05">11月5日</time><a href="/#picks">新增4套浅杏色针织造型的客片对照</a><span>精选客片</span></li>
+        <li><time datetime="2026-11-02">11月2日</time><a href="/#faq">补充胶片模拟与真胶片的放大差异说明</a><span>常见问题</span></li>
+        <li><time datetime="2026-10-29">10月29日</time><a href="/#guide">重排拍摄流程步骤，加入妆造沟通节点</a><span>拍摄指南</span></li>
+        <li><time datetime="2026-10-24">10月24日</time><a href="/#cats">风格分类新增“新中式旗袍”入口</a><span>风格分类</span></li>
+        <li><time datetime="2026-10-18">10月18日</time><a href="/#trust">可信度分层调整：客片授权标注规则</a><span>可信度分层</span></li>
+        <li><time datetime="2026-10-15">10月15日</time><a href="/#comments">收录9条带具体条目指名的选片反馈</a><span>用户评论</span></li>
+      </ul>
+    </section>
+
+    <!-- 4 分类入口 -->
+    <section class="section" id="cats" aria-labelledby="h-cats">
+      <div class="section-head">
+        <h2 id="h-cats">风格分类入口 <small>CATEGORIES</small></h2>
+        <p>按成片气质和拍摄条件划分</p>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#picks"><b>胶片质感人像</b><em>Portra 400 色系 · 颗粒控制</em></a>
+        <a class="cat-item" href="/#picks"><b>自然窗光写真</b><em>阴天柔光 · 低对比</em></a>
+        <a class="cat-item" href="/#picks"><b>复古港风</b><em>暖黄轮廓 · 深褐背景</em></a>
+        <a class="cat-item" href="/#picks"><b>新中式旗袍</b><em>屏风布景 · 青灰色调</em></a>
+        <a class="cat-item" href="/#picks"><b>城市天台外景</b><em>日落逆光 · 楼群背景</em></a>
+        <a class="cat-item" href="/#picks"><b>居家纪实</b><em>针织棉麻 · 生活感</em></a>
+        <a class="cat-item" href="/#picks"><b>黑白高调人像</b><em>高键布光 · 骨骼线条</em></a>
+        <a class="cat-item" href="/#picks"><b>职业形象照</b><em>纯灰背景 · 半身构图</em></a>
+        <a class="cat-item" href="/#picks"><b>闺蜜双人写真</b><em>同色系穿搭 · 互动抓拍</em></a>
+      </div>
+    </section>
+
+    <!-- 5 深度解析 -->
+    <section class="section" id="deep" aria-labelledby="h-deep">
+      <div class="section-head">
+        <h2 id="h-deep">深度解析 <small>IN DEPTH</small></h2>
+        <p>窗光棚拍被高估了吗</p>
+      </div>
+      <div class="deep">
+        <p>先说一个可以被反驳的判断：<strong>对普通消费者而言，自然窗光棚拍的成片满意度并不天然高于人工布光影棚，它更依赖当天天气和窗向，稳定性反而是短板。</strong>这个结论来自46组客片里按天气分的横向比对，不是风格偏好问题，而是变量控制问题。</p>
+
+        <h3>判断一：窗光的“柔和”是结果，不是保证</h3>
+        <p>窗光之所以柔和，是因为光源面积大、方向单一。但2026年10月杭州的一组对比很说明问题：同一间朝东的棚，10月11日晴天上午9点，窗外直射光进深到1.2米，人物颧骨下方阴影边界明显，摄影师被迫加了双层柔光布；10月14日阴天同一时段，窗光均匀覆盖到2米，妆面细节和颈纹过渡都更干净。也就是说，<strong>同一套窗光方案，晴天和阴天要用两套补光逻辑</strong>。把“窗光=柔”当成默认前提，晴天去拍大概率会失望。</p>
+        <blockquote>
+          10月11日上午拍的那组，颧骨阴影修了快两个小时，反而比阴天那组累。后来工作室直接把晴天档期挪到下午四点后。
+          <footer>—— 杭州某工作室摄影助理，10月11日档期记录</footer>
+        </blockquote>
+
+        <h3>判断二：人工布光的可控性，在验收环节更占优</h3>
+        <p>人工布光影棚的变量少，主光位置、光比、色温都能按预设执行。下面这张对照表来自10月内两组同预算的拍摄记录，可以逐项核对：</p>
+        <table class="compare-table">
+          <thead>
+            <tr><th>对比项</th><th>自然窗光棚拍</th><th>人工布光影棚</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>天气依赖</td><td>高，阴天与晴天差异明显</td><td>无，室内可控</td></tr>
+            <tr><td>有效拍摄时段</td><td>上午9—11点为主</td><td>全天可排</td></tr>
+            <tr><td>主副光比</td><td>约1:1.5，靠自己调反光板</td><td>1:2—1:3可精确设定</td></tr>
+            <tr><td>皮肤瑕疵显影</td><td>较低</td><td>较高，需妆造配合</td></tr>
+            <tr><td>同预算成片一致率</td><td>约六成（受天气波动）</td><td>约八成</td></tr>
+          </tbody>
+        </table>
+        <p>表格里的数字不是行业通例，是这46组样本的统计。它的意义在于把“哪种更好”拆成可以逐项打勾的清单，而不是停留在风格口号上。</p>
+
+        <h3>判断三：选片焦虑的真正来源是造型数量</h3>
+        <p>11月5日那组4套造型的窗光客片，初选78张、终选22张，选片耗时2小时40分。同一工作室10月27日只有2套造型的外景组，初选46张、终选16张，选片用了50分钟。<strong>造型从2套加到4套，选片时间翻了不止三倍</strong>，因为每套造型都要独立比较构图和表情。对第一次拍摄的人，2套造型是比较稳的起点。</p>
+        <ul class="timeline">
+          <li><b>10月22日</b>居家组拍摄，1套造型，初选41张，终选14张，选片约40分钟。</li>
+          <li><b>10月27日</b>天台外景，2套造型，初选46张，终选16张，选片约50分钟。</li>
+          <li><b>11月5日</b>窗光棚拍，4套造型，初选78张，终选22张，选片2小时40分。</li>
+        </ul>
+
+        <h3>事实、回应与推测要分开看</h3>
+        <p><strong>事实：</strong>11月5日客片的拍摄通告上写着“阴天窗光，主光仅用侧窗，白色反光板两块”。<strong>回应：</strong>有用户在同条客片下留言，认为成片“肤色偏灰”，工作室回复称是未被选入终选的备选片色调，并公开了原片与终选的对比。<strong>转述：</strong>另一家工作室的摄影师在同城交流群里表示“窗光棚的受欢迎程度被小红书带高了”，这句话没有数据支撑，只作转述。<strong>推测：</strong>如果2027年冬季连续阴雨天增多，朝东窗光棚的档期竞争会更集中到上午，但目前没有档期数据能验证。</p>
+        <p>回到开头那个判断：窗光不是被高估的风格，而是被低估的变量。真正决定成片的，是窗向、天气、反光板位置和造型数量四个可以提前核对的条目。把这四项写进拍摄前的确认清单，比纠结“哪种风格好看”更有用。</p>
+      </div>
+    </section>
+
+    <!-- 6 体验指南 -->
+    <section class="section" id="guide" aria-labelledby="h-guide">
+      <div class="section-head">
+        <h2 id="h-guide">拍摄体验指南 <small>HOW TO PREPARE</small></h2>
+        <p>从定风格到修图验收的六步</p>
+      </div>
+      <ol class="steps">
+        <li><b>先定用途，再定风格</b><p>头像用选半身、纯色背景；纪念用可以选外景或棚拍多造型。用途没定就去挑风格，最后容易做成四不像。</p></li>
+        <li><b>核对场地光线条件</b><p>窗光棚问清朝向和拍摄时段，朝东棚上午最好，朝西棚下午三点后更稳定。外景问清阴天备选方案。</p></li>
+        <li><b>妆造沟通留出试妆时间</b><p>10月29日修订的流程把试妆提前到拍摄前一周。腮红色号、眉形、发型蓬松度这三项必须当面试，只看参考图不靠谱。</p></li>
+        <li><b>造型数量控制在2至3套</b><p>超过3套，每套平均实拍时间不足40分钟，表情会疲。服装按深浅、软硬各一件搭配，容易出层次。</p></li>
+        <li><b>拍摄当天带齐补妆和备选衣物</b><p>吸油纸、透明散粉、同色系备用耳饰。外景另外带一条薄披肩，降温时能救场。</p></li>
+        <li><b>修图验收分两轮</b><p>第一轮看肤色是否自然、发际线是否干净；第二轮看画面边缘、背景杂物和服装褶皱。修图要求写明“保留皮肤纹理”，避免过度磨皮。</p></li>
+      </ol>
+    </section>
+
+    <!-- 7 FAQ -->
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="section-head">
+        <h2 id="h-faq">常见问题 <small>FAQ</small></h2>
+        <p>拍摄前最常被问到的五点</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>拍一套女性写真大概需要多长时间？</summary>
+          <p>室内棚拍通常2至3小时，含化妆造型1小时、实拍1.5小时；外景因转场和光线等待，一般排4小时以上。若换三套造型，多数工作室给到的拍摄时间是4至5小时，选片另算，常见再加1至2小时。</p>
+        </details>
+        <details>
+          <summary>胶片质感的写真一定要用胶片机拍吗？</summary>
+          <p>不一定。Portra 400 的色彩偏向暖调、宽容度高，数码相机加后期模拟也能接近；但胶片的颗粒分布和过曝滚降靠算法难以完全复刻，成片放大到60厘米以上差别会变明显。如果只做社交平台发布，数码模拟足够。</p>
+        </details>
+        <details>
+          <summary>选片时该按什么标准筛？</summary>
+          <p>先锁定表情自然的，再比较同一姿势中眼神和手部处理，最后按相册页数取不同景别的组合。30张初选里通常只留12至18张，重复构图超过三张就要做减法。11月5日那组4套造型的客片终选22张，已经偏多。</p>
+        </details>
+        <details>
+          <summary>自然光棚拍和小型影棚布光的差别在哪？</summary>
+          <p>自然光棚拍的窗光方向固定，人物面部过渡柔和，阴天色温约5500K；小型影棚用柔光箱和反光板，能压暗背景突出重点，但需要控制主副光比，否则鼻影和颈纹会更清楚。选哪种，先看当天天气。</p>
+        </details>
+        <details>
+          <summary>外景写真遇到阴天还能拍出通透感吗？</summary>
+          <p>可以。阴天是天然的大柔光箱，适合浅色系和低对比复古调；关键是把背景中高亮的天空面积压到画面三成以内，靠前景树影或墙面制造层次，后期再补一点对比度。城市天台阴天反而比晴天更容易控光。</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- 8 用户评论 -->
+    <section class="section" id="comments" aria-labelledby="h-comments">
+      <div class="section-head">
+        <h2 id="h-comments">用户评论 <small>VOICES</small></h2>
+        <p>来自客片页与交流群的真实反馈</p>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">阿</span><b>阿棠</b><time datetime="2026-11-06">11月6日</time></div>
+          <p><span class="target">11月5日那组窗光客片</span>的肤色我很喜欢，但想问发尾高光是不是修过头了，看着有点发白。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">林</span><b>林间小径</b><time datetime="2026-11-05">11月5日</time></div>
+          <p>在两家工作室之间犹豫了半个月，看完<span class="target">晴天和阴天两组的对比</span>才明白问题不在风格。已约11月11日朝东棚上午档。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">九</span><b>九月的猫</b><time datetime="2026-11-04">11月4日</time></div>
+          <p>吐槽一下，<span class="target">新中式那组</span>屏风位置太靠边，人物一半画面被裁掉，取景有点可惜。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">陈</span><b>陈语迟</b><time datetime="2026-11-03">11月3日</time></div>
+          <p>港风红丝绒那组颜色正，但深褐背景加红衣服，看久了有点闷。换米白背景也许更适合小个子。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">M</span><b>Momo</b><time datetime="2026-10-31">10月31日</time></div>
+          <p>4套造型选片选了近三个小时，真实。下次只约2套，<span class="target">11月5日那条选片记录</span>说到我心坎上。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">顾</span><b>顾时</b><time datetime="2026-10-28">10月28日</time></div>
+          <p><span class="target">天台日落那组</span>等光等了四十分钟，值。<span class="target">17:40那十分钟</span>的说法不夸张，太阳一沉光就散了。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">江</span><b>江面上</b><time datetime="2026-10-25">10月25日</time></div>
+          <p>居家那组好看是好看，但我家朝北，落地窗光根本不够，照搬会翻车。提醒一下。</p>
+        </div>
+        <div class="comment">
+          <div class="comment-head"><span class="avatar">许</span><b>许晚舟</b><time datetime="2026-10-20">10月20日</time></div>
+          <p>修图验收那两条写得具体。第一轮看发际线，第二轮看背景杂物，我上次就是背景里一截衣架没修掉，气死。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9 相关资讯 -->
+    <section class="section" id="news" aria-labelledby="h-news">
+      <div class="section-head">
+        <h2 id="h-news">相关资讯 <small>NEWS</small></h2>
+        <p>行业动态与档期信息</p>
+      </div>
+      <div class="news-grid">
+        <article class="news-item">
+          <span class="news-date">11月7日</span>
+          <div><h3>秋冬档期开放，窗光棚上午时段最先满</h3><p>多家城区工作室发布11月11日至20日预约安排，朝东窗光棚上午档在开放当天基本订满，下午档仍有空位。</p></div>
+        </article>
+        <article class="news-item">
+          <span class="news-date">11月2日</span>
+          <div><h3>新中式旗袍布景道具价格上调</h3><p>竹影屏风租赁价较10月上涨约一成五，部分工作室改用投影替代实体屏风，投影造价低但边缘过渡偏硬。</p></div>
+        </article>
+        <article class="news-item">
+          <span class="news-date">10月30日</span>
+          <div><h3>胶片冲扫周期拉长至5至7天</h3><p>常用135彩负冲扫周期从3至4天延长到5至7天，选择胶片拍摄的客人需把交片时间往后预留两周。</p></div>
+        </article>
+        <article class="news-item">
+          <span class="news-date">10月26日</span>
+          <div><h3>城市外景拍摄许可收紧</h3><p>部分旧厂房园区要求提前三个工作日登记拍摄，周末临时找场地拍摄的成功率下降，外景方案需提前确认。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 10 相关推荐 -->
+    <section class="section" id="recs" aria-labelledby="h-recs">
+      <div class="section-head">
+        <h2 id="h-recs">相关推荐 <small>RELATED</small></h2>
+        <p>按搜索热度整理的具体条目</p>
+      </div>
+      <div class="rec-tags">
+        <a href="/#picks">阴天窗光人像怎么补光</a>
+        <a href="/#deep">Portra 400 色调 数码模拟</a>
+        <a href="/#picks">复古港风红丝绒穿搭</a>
+        <a href="/#picks">新中式旗袍写真布景</a>
+        <a href="/#guide">写真选片流程</a>
+        <a href="/#faq">外景阴天拍摄方案</a>
+        <a href="/#guide">修图验收清单</a>
+        <a href="/#picks">居家针织衫写真</a>
+        <a href="/#deep">晴天窗光补光逻辑</a>
+        <a href="/#picks">天台日落逆光参数</a>
+        <a href="/#guide">妆造试妆提前一周</a>
+        <a href="/#faq">胶片冲扫周期</a>
+      </div>
+      <div class="quote-panel">
+        <blockquote>把拍摄当作一次有交付标准的合作，比当作一次风格赌注更省心。</blockquote>
+        <p>—— 来自10月27日天台外景拍摄后的拍摄者日志</p>
+      </div>
+    </section>
+
+    <!-- 11 可信度分层 -->
+    <section class="section" id="trust" aria-labelledby="h-trust">
+      <div class="section-head">
+        <h2 id="h-trust">可信度分层 <small>TRUST TIERS</small></h2>
+        <p>本页信息按来源可靠性标注</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust">
+          <b>可核对记录</b>
+          <span>TIER 01</span>
+          <p>拍摄通告、档期表、初选与终选张数、冲扫周期。带日期和数量的，都能追溯到具体条目，引用时注明来源即可。</p>
+        </div>
+        <div class="trust t2">
+          <b>从业者转述</b>
+          <span>TIER 02</span>
+          <p>交流群里的观点、摄影助理的口头评价。反映实际经验，但没有完整数据支撑，引用时应标明“转述”。</p>
+        </div>
+        <div class="trust t3">
+          <b>推测与预判</b>
+          <span>TIER 03</span>
+          <p>如对2027年冬季档期趋势的预判。这类内容只作为讨论方向，不作为决策依据，随时间推移可能失效。</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- 侧栏 -->
+  <aside class="side-col" aria-label="辅助导航与信息">
+    <div class="side-card">
+      <h3>本页目录</h3>
+      <nav class="toc-nav" id="tocNav" aria-label="目录导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选内容推荐</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#cats">风格分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">拍摄体验指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#recs">相关推荐</a>
+        <a href="/#trust">可信度分层</a>
+      </nav>
+    </div>
+    <div class="side-card">
+      <h3>热门风格</h3>
+      <ul class="side-list">
+        <li><span>自然窗光棚拍</span><span class="num">01</span></li>
+        <li><span>复古港风</span><span class="num">02</span></li>
+        <li><span>新中式旗袍</span><span class="num">03</span></li>
+        <li><span>胶片质感</span><span class="num">04</span></li>
+        <li><span>居家纪实</span><span class="num">05</span></li>
+      </ul>
+    </div>
+    <div class="side-card">
+      <h3>关键词索引</h3>
+      <div class="tag-cloud">
+        <a href="/#picks">窗光</a>
+        <a href="/#picks">港风</a>
+        <a href="/#picks">旗袍</a>
+        <a href="/#deep">胶片模拟</a>
+        <a href="/#guide">选片</a>
+        <a href="/#guide">修图</a>
+        <a href="/#faq">阴天外景</a>
+        <a href="/#comments">客片反馈</a>
+      </div>
+    </div>
+    <div class="side-card">
+      <h3>拍摄提示</h3>
+      <p class="side-note">朝东窗光棚，<strong>上午9—11点</strong>光线最稳。阴天不必改期，晴天反而要加柔光布。造型超过3套，选片时间会明显拉长。</p>
+    </div>
+  </aside>
+</div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#b5495b"/>
+            <circle cx="32" cy="25" r="10.5" fill="#f6e7d8"/>
+            <path d="M13 56c3-12 10-18 19-18s16 6 19 18" fill="#f6e7d8"/>
+          </svg>
+          <b>西西女性写真</b>
+        </div>
+        <p class="footer-pos">记录风格、光线与选片之间能被核对的细节，帮每一次拍摄少一点意外。</p>
+        <p class="footer-note">页脚更新时间 2026年11月8日，对应正文可核对更新项：11月7日深度解析补充、11月5日精选客片新增、11月2日常见问题修订。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容栏目</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#picks">精选客片</a>
+        <a href="/#updates">最新更新</a>
+        <a href="/#cats">风格分类</a>
+      </div>
+      <div class="footer-col">
+        <h4>阅读与参考</h4>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">拍摄指南</a>
+        <a href="/#faq">常见问题</a>
+        <a href="/#trust">可信度分层</a>
+      </div>
+      <div class="footer-col">
+        <h4>互动与动态</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#recs">相关推荐</a>
+        <a href="/#picks">本周精选</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 西西女性写真 · 页面内容含示例条目，拍摄参数与档期数据以实际通告为准。</p>
+      <p>示例数据说明：客片样本数、张数统计与档期信息均为演示用途整理。</p>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  /* 移动菜单 */
+  var menuBtn=document.getElementById('menuBtn');
+  var mobileMenu=document.getElementById('mobileMenu');
+  if(menuBtn&&mobileMenu){
+    menuBtn.addEventListener('click',function(){
+      var open=mobileMenu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded',open?'true':'false');
+      menuBtn.setAttribute('aria-label',open?'收起导航菜单':'打开导航菜单');
+    });
+    mobileMenu.addEventListener('click',function(e){
+      if(e.target.tagName==='A'){
+        mobileMenu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 搜索 */
+  var input=document.getElementById('searchInput');
+  var hint=document.getElementById('searchHint');
+  var index=[];
+  document.querySelectorAll('main h2, main h3, main summary, .rec-tags a, .cat-item b, .update-list a, .side-list li span:first-child').forEach(function(el){
+    var t=(el.textContent||'').replace(/\s+/g,' ').trim();
+    if(t) index.push({t:t,el:el});
+  });
+  function doSearch(){
+    var k=(input.value||'').replace(/\s+/g,' ').trim().toLowerCase();
+    if(!k){hint.classList.remove('show');return;}
+    var found=index.filter(function(item){return item.t.toLowerCase().indexOf(k)>-1;}).slice(0,6);
+    if(found.length){
+      hint.innerHTML='找到 '+found.length+' 条：'+found.map(function(f){return f.t;}).join('、');
+    }else{
+      hint.innerHTML='没有找到“'+input.value.trim()+'”相关条目，试试“窗光”“港风”“选片”或“旗袍”。';
+    }
+    hint.classList.add('show');
+  }
+  if(input){
+    input.addEventListener('input',doSearch);
+    input.addEventListener('keydown',function(e){
+      if(e.key==='Enter'){
+        e.preventDefault();
+        var k=(input.value||'').trim();
+        if(!k) return;
+        var found=index.filter(function(item){return item.t.indexOf(k)>-1;});
+        if(found.length){
+          var target=found[0].el.closest('section')||found[0].el;
+          if(target&&target.scrollIntoView) target.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+        doSearch();
+      }
+    });
+    document.addEventListener('click',function(e){
+      if(!e.target.closest('.search-wrap')) hint.classList.remove('show');
+    });
+  }
+
+  /* 回到顶部 */
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY>500){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  /* 侧栏滚动高亮 */
+  var tocLinks=Array.prototype.slice.call(document.querySelectorAll('#tocNav a'));
+  var sections=tocLinks.map(function(a){
+    var id=a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  }).filter(Boolean);
+  if('IntersectionObserver' in window && sections.length){
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          var id=en.target.id;
+          tocLinks.forEach(function(a){
+            a.classList.toggle('current', a.getAttribute('href')==='/# '+id || a.getAttribute('href')==='/#'.concat(id));
+          });
+        }
+      });
+    },{rootMargin:'-120px 0px -60% 0px',threshold:0});
+    sections.forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+</body>
+  </html>
