@@ -1,0 +1,1486 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>海角社区我和姐姐的幸福生活-家庭日常记录与相处指南</title>
+<meta name="description" content="海角社区我和姐姐的幸福生活是一个记录姐弟家庭日常的中文内容站，整理了同住相处规则、家务分工、节日记趣与姐弟沟通经验，附可核对的清单、时间线与真实评论，帮读者把平凡日子过成可回看的片段。">
+<meta name="keywords" content="海角社区我和姐姐的幸福生活">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23c8503c'/%3E%3Cpath d='M16 40c6-14 12-14 16 0 4-14 10-14 16 0' fill='none' stroke='%23fdf3e6' stroke-width='5' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='48' r='4' fill='%23fdf3e6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --rose:#c8503c;
+  --rose-deep:#9c3627;
+  --rose-soft:#f6ded6;
+  --ink:#2b2521;
+  --ink-2:#5a4f48;
+  --ink-3:#86776e;
+  --paper:#fdf8f2;
+  --card:#ffffff;
+  --line:#e9dccf;
+  --gold:#b98a2f;
+  --mint:#3f7d6a;
+  --radius-l:18px;
+  --radius-m:12px;
+  --radius-s:8px;
+  --shadow:0 2px 10px rgba(70,40,25,.07);
+  --shadow-lift:0 8px 22px rgba(70,40,25,.12);
+  --gap:clamp(14px,2vw,24px);
+  --fs-h1:clamp(1.7rem,4.2vw,2.6rem);
+  --fs-h2:clamp(1.25rem,2.6vw,1.6rem);
+  --fs-h3:1.06rem;
+  --fs-body:1rem;
+  --fs-sm:.86rem;
+  --ann-h:40px;
+  --head-h:64px;
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--font);
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.78;
+  font-size:var(--fs-body);
+  -webkit-text-size-adjust:100%;
+}
+img{max-width:100%}
+a{color:var(--rose-deep);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .8em}
+ul,ol{margin:0 0 .8em;padding-left:1.3em}
+section{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px)}
+[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px)}
+
+/* ===== 吸顶公告 + 页头 ===== */
+.sticky-wrap{
+  position:sticky;
+  top:0;
+  z-index:60;
+}
+.announce{
+  height:var(--ann-h);
+  background:linear-gradient(90deg,var(--rose-deep),var(--rose));
+  color:#fff5ef;
+  font-size:var(--fs-sm);
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+.announce-in{
+  width:min(1200px,100%);
+  margin:0 auto;
+  padding:0 16px;
+  display:flex;
+  gap:10px;
+  align-items:center;
+  white-space:nowrap;
+  overflow-x:auto;
+  scrollbar-width:none;
+}
+.announce-in::-webkit-scrollbar{display:none}
+.announce b{font-weight:700;letter-spacing:.02em}
+.announce .dot{opacity:.6}
+.announce a{color:#ffe9df;text-decoration:underline;text-underline-offset:3px}
+
+.head{
+  height:var(--head-h);
+  background:rgba(253,248,242,.96);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.head-in{
+  width:min(1200px,100%);
+  height:100%;
+  margin:0 auto;
+  padding:0 16px;
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.brand svg{display:block}
+.brand-text{font-weight:800;font-size:1.02rem;letter-spacing:.01em;color:var(--ink)}
+.nav{display:flex;gap:4px;flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{
+  padding:7px 11px;
+  border-radius:999px;
+  color:var(--ink-2);
+  font-size:.92rem;
+  white-space:nowrap;
+}
+.nav a:hover{background:var(--rose-soft);color:var(--rose-deep);text-decoration:none}
+.nav a.active{background:var(--rose);color:#fff}
+.head-tools{display:flex;align-items:center;gap:8px;margin-left:auto;flex-shrink:0}
+.search{position:relative}
+.search input{
+  width:190px;
+  padding:8px 12px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  background:#fff;
+  font:inherit;
+  font-size:.88rem;
+  color:var(--ink);
+}
+.search input:focus{outline:2px solid var(--rose);outline-offset:1px;border-color:transparent}
+.search-result{
+  position:absolute;
+  top:calc(100% + 8px);
+  right:0;
+  width:290px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  box-shadow:var(--shadow-lift);
+  padding:8px;
+  display:none;
+  max-height:320px;
+  overflow:auto;
+}
+.search-result.show{display:block}
+.search-result a{display:block;padding:7px 10px;border-radius:var(--radius-s);font-size:.88rem;color:var(--ink-2)}
+.search-result a:hover{background:var(--rose-soft);text-decoration:none;color:var(--rose-deep)}
+.search-empty{padding:10px 12px;font-size:.86rem;color:var(--ink-3)}
+.menu-btn{
+  display:none;
+  border:1px solid var(--line);
+  background:#fff;
+  border-radius:var(--radius-s);
+  padding:7px 10px;
+  font:inherit;
+  font-size:.88rem;
+  cursor:pointer;
+  color:var(--ink-2);
+}
+.menu-btn:focus-visible,.search input:focus-visible,.nav a:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--rose-deep);outline-offset:2px}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 82% 18%,rgba(185,138,47,.16),transparent 42%),
+    radial-gradient(circle at 12% 82%,rgba(200,80,60,.14),transparent 46%),
+    linear-gradient(160deg,#fff7ee,#fbece2 58%,#f7e3d8);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{
+  width:min(1200px,100%);
+  margin:0 auto;
+  padding:clamp(28px,5vw,58px) 16px clamp(24px,4vw,44px);
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:clamp(20px,4vw,46px);
+  align-items:center;
+}
+.hero-tag{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:.82rem;
+  color:var(--rose-deep);
+  background:#fff;
+  border:1px solid var(--rose-soft);
+  border-radius:999px;
+  padding:5px 13px;
+  margin-bottom:16px;
+}
+.hero-tag i{width:7px;height:7px;border-radius:50%;background:var(--rose);display:inline-block}
+.hero h1{font-size:var(--fs-h1);letter-spacing:.01em;margin-bottom:14px}
+.hero h1 span{color:var(--rose-deep)}
+.hero-lead{color:var(--ink-2);font-size:1rem;max-width:34em;margin-bottom:20px}
+.hero-lead b{color:var(--ink)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:7px;
+  padding:11px 20px;
+  border-radius:999px;
+  font-size:.94rem;
+  font-weight:600;
+  border:1px solid transparent;
+  cursor:pointer;
+  transition:transform .16s ease,box-shadow .16s ease;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px)}
+.btn-main{background:var(--rose);color:#fff;box-shadow:0 5px 14px rgba(200,80,60,.28)}
+.btn-ghost{background:#fff;color:var(--rose-deep);border-color:var(--rose-soft)}
+.hero-stats{display:flex;gap:clamp(16px,3vw,34px);flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:16px}
+.hero-stats div strong{display:block;font-size:1.28rem;color:var(--rose-deep);line-height:1.2}
+.hero-stats div span{font-size:.8rem;color:var(--ink-3)}
+.hero-art{position:relative;min-height:250px}
+.hero-art svg{width:100%;height:auto;display:block}
+.hero-note{
+  position:absolute;
+  right:4%;
+  top:6%;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  box-shadow:var(--shadow);
+  font-size:.76rem;
+  padding:7px 11px;
+  color:var(--ink-2);
+  line-height:1.5;
+}
+.hero-note b{color:var(--rose-deep)}
+
+/* ===== 布局 ===== */
+.wrap{width:min(1200px,100%);margin:0 auto;padding:0 16px}
+.layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 296px;
+  gap:var(--gap);
+  align-items:start;
+  padding:clamp(20px,3vw,34px) 0;
+}
+.main-col{display:flex;flex-direction:column;gap:var(--gap);min-width:0}
+.side-col{display:flex;flex-direction:column;gap:var(--gap);position:sticky;top:calc(var(--ann-h) + var(--head-h) + 14px)}
+
+/* ===== 通用板块 ===== */
+.panel{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius-l);
+  box-shadow:var(--shadow);
+  padding:clamp(18px,2.6vw,26px);
+}
+.panel-head{margin-bottom:16px}
+.panel-head h2{font-size:var(--fs-h2);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.panel-head h2::before{content:"";width:5px;height:1.05em;border-radius:3px;background:var(--rose);display:inline-block}
+.panel-head p{margin:8px 0 0;color:var(--ink-2);font-size:.92rem}
+.eyebrow{font-size:.76rem;letter-spacing:.14em;color:var(--gold);font-weight:700;text-transform:uppercase;margin-bottom:6px}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ov-card{
+  background:linear-gradient(180deg,#fff,#fdf4ee);
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  padding:14px;
+}
+.ov-card h3{font-size:.98rem;margin-bottom:6px}
+.ov-card p{font-size:.86rem;color:var(--ink-2);margin:0}
+.ov-card strong{color:var(--rose-deep)}
+
+/* 精选推荐 */
+.featured{display:grid;grid-template-columns:1.25fr 1fr;gap:14px}
+.feat-main{
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  overflow:hidden;
+  background:#fff;
+}
+.feat-main img{width:100%;height:190px;object-fit:cover;display:block}
+.feat-main div{padding:14px 16px}
+.feat-main h3{font-size:1.1rem;margin-bottom:6px}
+.feat-main p{font-size:.88rem;color:var(--ink-2);margin:0 0 8px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;font-size:.78rem;color:var(--ink-3)}
+.meta b{color:var(--rose-deep);font-weight:600}
+.feat-list{display:flex;flex-direction:column;gap:10px}
+.feat-item{
+  display:flex;
+  gap:10px;
+  padding:11px 12px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  background:#fffaf5;
+}
+.feat-item .num{
+  flex-shrink:0;
+  width:26px;height:26px;
+  border-radius:8px;
+  background:var(--rose-soft);
+  color:var(--rose-deep);
+  font-weight:700;
+  font-size:.84rem;
+  display:flex;align-items:center;justify-content:center;
+}
+.feat-item h3{font-size:.94rem;margin-bottom:3px}
+.feat-item p{font-size:.8rem;color:var(--ink-3);margin:0}
+
+/* 最新更新 时间线 */
+.timeline{list-style:none;padding:0;margin:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding-left:26px;margin-bottom:14px}
+.timeline li:last-child{margin-bottom:0}
+.timeline li::before{
+  content:"";
+  position:absolute;left:0;top:6px;
+  width:16px;height:16px;border-radius:50%;
+  background:#fff;border:3px solid var(--rose);
+}
+.timeline time{font-size:.76rem;color:var(--gold);font-weight:700;letter-spacing:.03em}
+.timeline h3{font-size:.98rem;margin:2px 0 3px}
+.timeline p{font-size:.85rem;color:var(--ink-2);margin:0}
+
+/* 分类入口 标签索引 */
+.tagindex{display:flex;flex-wrap:wrap;gap:9px}
+.tagindex a{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:7px 14px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid var(--line);
+  color:var(--ink-2);
+  font-size:.88rem;
+  transition:transform .16s ease,border-color .16s ease;
+}
+.tagindex a:hover{text-decoration:none;border-color:var(--rose);color:var(--rose-deep);transform:translateY(-2px)}
+.tagindex a span{font-size:.74rem;color:var(--ink-3)}
+
+/* 深度解析 */
+.deep{background:linear-gradient(180deg,#fff,#fff8f2)}
+.deep .lead{font-size:.96rem;color:var(--ink-2);border-left:3px solid var(--gold);padding-left:12px;margin-bottom:18px}
+.deep h3{
+  font-size:var(--fs-h3);
+  margin:22px 0 8px;
+  padding-bottom:6px;
+  border-bottom:1px dashed var(--line);
+}
+.deep h3:first-of-type{margin-top:0}
+.deep p{font-size:.95rem;color:var(--ink-2)}
+.deep p b{color:var(--ink)}
+.judge{
+  background:#fff;
+  border:1px solid var(--rose-soft);
+  border-left:4px solid var(--rose);
+  border-radius:var(--radius-m);
+  padding:14px 16px;
+  margin:14px 0;
+}
+.judge .jt{font-size:.78rem;font-weight:700;color:var(--rose-deep);letter-spacing:.08em;margin-bottom:5px}
+.judge p{margin:0;font-size:.92rem;color:var(--ink)}
+.checklist{
+  list-style:none;
+  padding:0;
+  margin:10px 0 16px;
+  display:grid;
+  gap:8px;
+}
+.checklist li{
+  display:grid;
+  grid-template-columns:22px 1fr;
+  gap:8px;
+  font-size:.9rem;
+  color:var(--ink-2);
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-s);
+  padding:9px 11px;
+}
+.checklist li i{
+  font-style:normal;font-weight:700;color:var(--mint);
+  width:22px;height:22px;border-radius:50%;background:#e8f3ee;
+  display:flex;align-items:center;justify-content:center;font-size:.8rem;
+}
+.checklist li b{color:var(--ink)}
+
+/* 对照面板 */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.compare-col{border-radius:var(--radius-m);padding:14px;border:1px solid var(--line);background:#fff}
+.compare-col.hot{background:#fff5f0;border-color:var(--rose-soft)}
+.compare-col h4{font-size:.86rem;letter-spacing:.05em;margin-bottom:8px;color:var(--rose-deep)}
+.compare-col.cool h4{color:var(--mint)}
+.compare-col ul{margin:0;padding-left:1.05em;font-size:.86rem;color:var(--ink-2)}
+.compare-col li{margin-bottom:4px}
+
+/* 体验指南 步骤 */
+.steps{list-style:none;padding:0;margin:0;counter-reset:s;display:grid;gap:11px}
+.steps li{
+  counter-increment:s;
+  display:grid;
+  grid-template-columns:34px 1fr;
+  gap:12px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  padding:12px 14px;
+}
+.steps li::before{
+  content:counter(s,decimal-leading-zero);
+  font-weight:800;
+  color:var(--rose-deep);
+  font-size:1rem;
+  width:34px;height:34px;
+  border-radius:50%;
+  background:var(--rose-soft);
+  display:flex;align-items:center;justify-content:center;
+}
+.steps h3{font-size:.96rem;margin-bottom:3px}
+.steps p{font-size:.85rem;color:var(--ink-2);margin:0}
+
+/* 榜单 */
+.rank{display:grid;gap:9px}
+.rank-row{
+  display:grid;
+  grid-template-columns:30px 1fr auto;
+  gap:10px;
+  align-items:center;
+  padding:11px 13px;
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  background:#fff;
+}
+.rank-row .rk{font-weight:800;color:var(--ink-3);font-size:.92rem}
+.rank-row:nth-child(1) .rk{color:var(--gold)}
+.rank-row:nth-child(2) .rk{color:#a98a53}
+.rank-row:nth-child(3) .rk{color:#9c7a5c}
+.rank-row h3{font-size:.93rem;margin-bottom:2px}
+.rank-row p{font-size:.79rem;color:var(--ink-3);margin:0}
+.rank-row .badge{
+  font-size:.74rem;
+  background:var(--rose-soft);
+  color:var(--rose-deep);
+  border-radius:999px;
+  padding:3px 9px;
+  white-space:nowrap;
+}
+
+/* 资讯 */
+.news-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.news-card{
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  padding:13px 15px;
+  background:#fff;
+}
+.news-card .src{font-size:.75rem;color:var(--gold);font-weight:700;margin-bottom:4px;letter-spacing:.02em}
+.news-card h3{font-size:.95rem;margin-bottom:5px}
+.news-card p{font-size:.84rem;color:var(--ink-2);margin:0}
+
+/* FAQ */
+.faq details{
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  background:#fff;
+  margin-bottom:10px;
+  overflow:hidden;
+}
+.faq details[open]{border-color:var(--rose-soft);background:#fffaf6}
+.faq summary{
+  cursor:pointer;
+  padding:13px 44px 13px 15px;
+  font-weight:600;
+  font-size:.95rem;
+  list-style:none;
+  position:relative;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";
+  position:absolute;right:16px;top:50%;
+  transform:translateY(-50%);
+  font-size:1.1rem;color:var(--rose);font-weight:700;
+  transition:transform .18s ease;
+}
+.faq details[open] summary::after{content:"−"}
+.faq .ans{padding:0 15px 14px;font-size:.88rem;color:var(--ink-2)}
+.faq .ans p{margin:0 0 .5em}
+.faq .ans p:last-child{margin:0}
+
+/* 评论 */
+.comments{display:grid;gap:11px}
+.cmt{
+  display:grid;
+  grid-template-columns:38px 1fr;
+  gap:11px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius-m);
+  padding:12px 14px;
+}
+.avt{
+  width:38px;height:38px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:#fff;font-size:.86rem;
+}
+.cmt .who{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;margin-bottom:3px}
+.cmt .who b{font-size:.88rem}
+.cmt .who time{font-size:.74rem;color:var(--ink-3)}
+.cmt p{font-size:.88rem;color:var(--ink-2);margin:0}
+.cmt.reply{margin-left:26px;background:#fdf4ee}
+
+/* 推荐标签 */
+.recs{display:flex;flex-wrap:wrap;gap:9px}
+.recs a{
+  padding:8px 14px;
+  background:#fff8f2;
+  border:1px solid var(--rose-soft);
+  border-radius:999px;
+  font-size:.87rem;
+  color:var(--rose-deep);
+}
+.recs a:hover{text-decoration:none;background:var(--rose-soft)}
+
+/* 侧栏 */
+.side-card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:var(--radius-l);
+  box-shadow:var(--shadow);
+  padding:16px 17px;
+}
+.side-card h2{
+  font-size:.95rem;
+  margin-bottom:11px;
+  padding-bottom:8px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+.side-card h2::before{content:"";width:4px;height:1em;background:var(--gold);border-radius:2px;display:inline-block}
+.side-nav{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.side-nav a{
+  display:block;
+  padding:6px 10px;
+  border-radius:var(--radius-s);
+  font-size:.88rem;
+  color:var(--ink-2);
+  border-left:3px solid transparent;
+}
+.side-nav a:hover{background:#fdf4ee;text-decoration:none;color:var(--rose-deep)}
+.side-nav a.active{background:var(--rose-soft);color:var(--rose-deep);border-left-color:var(--rose);font-weight:600}
+.quote-card{
+  background:linear-gradient(160deg,#fff6ef,#fff);
+  border:1px dashed var(--rose-soft);
+}
+.quote-card p{font-size:.9rem;color:var(--ink-2);font-style:normal;margin:0 0 8px}
+.quote-card cite{font-size:.76rem;color:var(--ink-3);font-style:normal}
+.side-list{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.side-list li{font-size:.86rem;color:var(--ink-2);line-height:1.6}
+.side-list li b{color:var(--rose-deep);font-weight:700}
+.side-list time{font-size:.74rem;color:var(--ink-3);display:block}
+
+/* 页脚 */
+.footer{
+  background:#2b2521;
+  color:#e8ddd3;
+  margin-top:10px;
+  padding:clamp(28px,4vw,42px) 0 20px;
+}
+.foot-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1fr;
+  gap:clamp(18px,3vw,36px);
+}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.foot-brand svg{display:block;flex-shrink:0}
+.foot-brand strong{font-size:1rem;color:#fff}
+.foot-pos{font-size:.86rem;color:#bfae9f;margin:0 0 12px}
+.foot-col h3{font-size:.85rem;color:#fff;letter-spacing:.06em;margin-bottom:10px}
+.foot-col a{display:block;font-size:.84rem;color:#c3b3a5;padding:3px 0}
+.foot-col a:hover{color:#fff;text-decoration:none}
+.foot-note{
+  margin-top:22px;
+  padding-top:14px;
+  border-top:1px solid #443b34;
+  font-size:.78rem;
+  color:#9d8e81;
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.foot-note a{color:#c3b3a5}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;
+  right:16px;
+  bottom:18px;
+  width:44px;height:44px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--rose-deep);
+  font-size:1rem;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:var(--shadow-lift);
+  display:none;
+  z-index:70;
+}
+#toTop.show{display:flex;align-items:center;justify-content:center}
+#toTop:hover{transform:translateY(-2px)}
+
+/* ===== 响应式 ===== */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  .side-col{position:static;flex-direction:row;flex-wrap:wrap}
+  .side-col > *{flex:1 1 260px}
+  .hero-in{grid-template-columns:1fr}
+  .hero-art{order:-1;min-height:0;max-width:420px;margin:0 auto}
+  .hero-note{top:0;right:0}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .nav{
+    display:none;
+    position:absolute;
+    top:var(--head-h);
+    left:0;right:0;
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding:10px 16px 14px;
+    flex-direction:column;
+    gap:2px;
+    overflow:visible;
+    box-shadow:var(--shadow-lift);
+    z-index:80;
+  }
+  .nav.open{display:flex}
+  .head-in{position:relative}
+  .menu-btn{display:inline-block}
+  .search input{width:132px}
+  .search-result{width:min(290px,calc(100vw - 32px))}
+  .featured{grid-template-columns:1fr}
+  .overview-grid{grid-template-columns:1fr}
+  .news-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .hero-stats{gap:18px}
+  .side-col{flex-direction:column}
+  #toTop{bottom:14px;right:12px;width:42px;height:42px}
+}
+@media (max-width:420px){
+  .brand-text{font-size:.9rem;max-width:7.5em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .head-in{gap:8px}
+  .btn{padding:10px 16px;font-size:.9rem}
+  .rank-row{grid-template-columns:24px 1fr;gap:8px}
+  .rank-row .badge{grid-column:2}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover,.tagindex a:hover,#toTop:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="sticky-wrap">
+  <div class="announce" aria-label="站内更新公告">
+    <div class="announce-in">
+      <b>海角社区我和姐姐的幸福生活</b>
+      <span class="dot">·</span>
+      <span>11月6日更新：姐弟家务分工表 3.2 版、秋末阳台种菜清单、11月1日对话逐字稿</span>
+      <span class="dot">·</span>
+      <a href="/#updates">查看更新记录</a>
+    </div>
+  </div>
+  <header class="head">
+    <div class="head-in">
+      <a class="brand" href="/#top" aria-label="海角社区我和姐姐的幸福生活 首页">
+        <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#c8503c"/>
+          <path d="M16 40c6-14 12-14 16 0 4-14 10-14 16 0" fill="none" stroke="#fdf3e6" stroke-width="5" stroke-linecap="round"/>
+          <circle cx="32" cy="48" r="4" fill="#fdf3e6"/>
+        </svg>
+        <span class="brand-text">海角社区我和姐姐的幸福生活</span>
+      </a>
+      <nav class="nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">同住概览</a>
+        <a href="/#featured">精选日常</a>
+        <a href="/#updates">本周更新</a>
+        <a href="/#channels">分类频道</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#reviews">读者评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#rank">月度榜单</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="搜条目 / 规则 / 日期" aria-label="站内搜索" autocomplete="off">
+          <div class="search-result" id="searchResult" role="listbox" aria-label="搜索结果"></div>
+        </div>
+        <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">菜单</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="heroTitle">
+    <div class="hero-in">
+      <div>
+        <span class="hero-tag"><i></i>2026年11月 · 第 47 周家庭记录</span>
+        <h1 id="heroTitle">海角社区我和姐姐的幸福生活</h1>
+        <p class="hero-lead">从 2026 年 10 月 10 日搬进雨后巷 12 号开始，用 26 篇记录、1 张家务分工表、4 份对话逐字稿，保存一个姐姐和一个27岁弟弟同住的两个月。规则写得具体，争吵也照实写，<b>可回看的日常比完美日常更耐读</b>。</p>
+        <div class="hero-cta">
+          <a class="btn btn-main" href="/#deep">读本周深度解析</a>
+          <a class="btn btn-ghost" href="/#guide">看同住三步法</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>26</strong><span>篇生活记录</span></div>
+          <div><strong>9</strong><span>条家务分工条款</span></div>
+          <div><strong>4</strong><span>份对话逐字稿</span></div>
+          <div><strong>2</strong><span>个互动栏目</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 320" role="img" aria-label="手绘的厨房、餐桌与阳台构图">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fbe3d6"/>
+              <stop offset="1" stop-color="#f6cbb8"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#fffdf9"/>
+              <stop offset="1" stop-color="#f4e2d2"/>
+            </linearGradient>
+          </defs>
+          <rect x="12" y="18" width="376" height="284" rx="20" fill="url(#g1)"/>
+          <rect x="12" y="210" width="376" height="92" rx="0" fill="#eec7b0" opacity=".55"/>
+          <rect x="46" y="76" width="132" height="120" rx="10" fill="url(#g2)" stroke="#d8a98e" stroke-width="2"/>
+          <rect x="58" y="90" width="108" height="52" rx="6" fill="#fff4ea" stroke="#e4c3ac"/>
+          <circle cx="112" cy="158" r="16" fill="#c8503c" opacity=".85"/>
+          <rect x="196" y="120" width="152" height="16" rx="8" fill="#c98d6b"/>
+          <rect x="206" y="136" width="12" height="56" rx="6" fill="#b87d5b"/>
+          <rect x="326" y="136" width="12" height="56" rx="6" fill="#b87d5b"/>
+          <circle cx="270" cy="106" r="15" fill="#f0d1b8" stroke="#c98d6b" stroke-width="2"/>
+          <rect x="248" y="96" width="10" height="20" rx="3" fill="#c8503c"/>
+          <rect x="282" y="96" width="10" height="20" rx="3" fill="#3f7d6a"/>
+          <rect x="300" y="62" width="52" height="40" rx="6" fill="#fffdf9" stroke="#d8a98e"/>
+          <path d="M306 84h40" stroke="#e4c3ac" stroke-width="2"/>
+          <path d="M60 250h280" stroke="#c98d6b" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="86" cy="238" r="9" fill="#b98a2f"/>
+          <circle cx="112" cy="238" r="9" fill="#c8503c" opacity=".8"/>
+          <circle cx="138" cy="238" r="9" fill="#3f7d6a" opacity=".8"/>
+          <path d="M250 232c8-18 20-18 26 0" fill="none" stroke="#8f6b52" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+        <span class="hero-note"><b>11月6日</b><br>阳台薄荷第 3 次采收</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+
+    <div class="main-col">
+
+      <!-- 领域概览 -->
+      <section class="panel" id="overview" aria-labelledby="ovTitle">
+        <div class="panel-head">
+          <div class="eyebrow">领域概览</div>
+          <h2 id="ovTitle">姐弟同住的两个月：记录范围与判断坐标</h2>
+          <p>记录对象是两位成年家庭成员的一日三餐、房间秩序、开销分摊与情绪处理，时间从 2026 年 10 月 10 日持续到 11 月 7 日。</p>
+        </div>
+        <div class="overview-grid">
+          <div class="ov-card">
+            <h3>住进来的第一周</h3>
+            <p>10 月 10 日搬入雨后巷 12 号，两室一厅，月租 3600 元。前 5 天实行“谁先到家谁做饭”，<strong>第 6 天因外卖垃圾处置起争执</strong>，催生第一版分工表。</p>
+          </div>
+          <div class="ov-card">
+            <h3>分工表的第三次修订</h3>
+            <p>11 月 6 日发布 3.2 版，共 9 条，含垃圾清运、厨房收尾、洗衣机预约、账本核对时间。<strong>条款从 5 条增加到 9 条</strong>，每条都写了责任人。</p>
+          </div>
+          <div class="ov-card">
+            <h3>记录方法</h3>
+            <p>每晚 22 点前写 80 字，只写当天发生的事；对话逐字稿用手机录音整理，保留原话和停顿标注。<strong>不补写、不美化</strong>，争吵记录与温馨记录按同一天入档。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 精选内容推荐 -->
+      <section class="panel" id="featured" aria-labelledby="featTitle">
+        <div class="panel-head">
+          <div class="eyebrow">精选内容推荐</div>
+          <h2 id="featTitle">值得先读的四篇日常记录</h2>
+          <p>按可读性和信息密度挑，时间点都在 10 月 19 日之后。</p>
+        </div>
+        <div class="featured">
+          <article class="feat-main">
+            <img src="https://picsum.photos/seed/hj-kitchen-11/640/380" width="640" height="380" loading="lazy" alt="雨后巷12号厨房台面，贴着手写家务分工表的冰箱门" style="object-fit:cover">
+            <div>
+              <div class="meta"><b>深读</b><span>11月6日</span><span>约 1200 字</span></div>
+              <h3>家务分工表 3.2 版：为什么把“顺手”写进条款</h3>
+              <p>第 7 条“厨房台面顺手擦”是整张表唯一没有打卡记录的条款。姐姐在 11 月 4 日的对话逐字稿里说：“写下来不是为了考核，是为了少一次开口气。”</p>
+            </div>
+          </article>
+          <div class="feat-list">
+            <article class="feat-item">
+              <span class="num">1</span>
+              <div>
+                <h3>10月19日：姐姐的咖喱饭与迟到 40 分钟的弟弟</h3>
+                <p>那顿饭凉了，两人第一次用记账本的方式谈情绪。</p>
+              </div>
+            </article>
+            <article class="feat-item">
+              <span class="num">2</span>
+              <div>
+                <h3>阳台薄荷与九层塔：两个花盆的归属权</h3>
+                <p>10 月 26 日起，植物浇水被拆成早班与晚班。</p>
+              </div>
+            </article>
+            <article class="feat-item">
+              <span class="num">3</span>
+              <div>
+                <h3>洗衣机预约表：22 点后不转筒的约定</h3>
+                <p>楼下住户上门一次之后，才有了这条硬规则。</p>
+              </div>
+            </article>
+            <article class="feat-item">
+              <span class="num">4</span>
+              <div>
+                <h3>11月1日的对话逐字稿：关于“你从没问过我想吃什么”</h3>
+                <p>全文 1900 字，保留 14 处停顿标记。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="panel" id="updates" aria-labelledby="upTitle">
+        <div class="panel-head">
+          <div class="eyebrow">最新更新</div>
+          <h2 id="upTitle">11月6日到11月8日的条目进度</h2>
+          <p>每条都对应具体文件或条目，可逐条核对。</p>
+        </div>
+        <ul class="timeline">
+          <li>
+            <time datetime="2026-11-08">今天 · 11月8日</time>
+            <h3>新增“周末早起清单”条目</h3>
+            <p>姐姐负责阳台浇水与买菜，弟弟负责吸尘与快递签收。清单贴在玄关第二层鞋柜上，共 6 项。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-07">昨天 · 11月7日</time>
+            <h3>账本核对完成 10 月 10 日至 11 月 6 日</h3>
+            <p>两人合计支出 4186 元，其中食材 1732 元、水电燃气 486 元、日用品 296 元、外卖 612 元、其余为交通与杂项，差额 3 元记入公摊。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-06">11月6日</time>
+            <h3>家务分工表更新到 3.2 版</h3>
+            <p>新增第 9 条“每周日 21 点核对账本与下周菜单”，删除原第 4 条“轮流买菜”，改为按时间区块分配。</p>
+          </li>
+          <li>
+            <time datetime="2026-11-04">11月4日</time>
+            <h3>上传 11 月 1 日对话逐字稿完整版</h3>
+            <p>1900 字，含姐姐原话“你从没问过我想吃什么”，以及弟弟在第 7 分 12 秒的回应。</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="panel" id="channels" aria-labelledby="chTitle">
+        <div class="panel-head">
+          <div class="eyebrow">分类频道</div>
+          <h2 id="chTitle">从生活场景进入的十个频道</h2>
+          <p>频道按事件类型划分，不用泛泛的“生活”“情感”作名。</p>
+        </div>
+        <div class="tagindex">
+          <a href="/#featured">姐弟家务分工 <span>9条</span></a>
+          <a href="/#deep">阳台种菜记录 <span>7篇</span></a>
+          <a href="/#guide">同住开销记账 <span>11篇</span></a>
+          <a href="/#reviews">厨房收尾规则 <span>6条</span></a>
+          <a href="/#news">洗衣机使用时间 <span>5次</span></a>
+          <a href="/#faq">姐弟吵架复盘 <span>8条</span></a>
+          <a href="/#rank">周末菜单安排 <span>4周</span></a>
+          <a href="/#featured">宠物喂养分工 <span>2只</span></a>
+          <a href="/#updates">访客接待约定 <span>3次</span></a>
+          <a href="/#deep">节日家里布置 <span>2次</span></a>
+        </div>
+      </section>
+
+      <!-- 深度解析：唯一主体阅读区 -->
+      <section class="panel deep" id="deep" aria-labelledby="deepTitle">
+        <div class="panel-head">
+          <div class="eyebrow">深度解析 · 全页唯一主体阅读区</div>
+          <h2 id="deepTitle">把“谁都没错”写进条款，同住才稳</h2>
+        </div>
+        <p class="lead">这一节只谈一个判断：姐弟同住能不能长久，关键不在感情深不深，而在双方有没有把“不顺手的部分”写进可核对的条款。下面用 10 月 10 日到 11 月 6 日的记录逐条对照。</p>
+
+        <h3>判断一：口头约定撑不过 6 天，书面条款才撑得住第 27 天</h3>
+        <p>10 月 10 日至 10 月 15 日，两人只有三条口头约定：谁先到家谁做饭、垃圾谁看见谁扔、洗衣机谁用谁清滤网。第 6 天（10 月 15 日）晚上，厨房垃圾桶里出现三份外卖盒，姐姐在 22 点 40 分发了一条语音：“我说过几次了。”弟弟当天记录里写着“以为自己会顺手，结果没顺”。10 月 16 日第一版分工表上墙，共 5 条；到 11 月 6 日 3.2 版，增至 9 条。修订频次是前 6 天 0 次、后 21 天 3 次，每次修订都对应一次具体摩擦。</p>
+        <div class="judge">
+          <div class="jt">可被反驳的判断</div>
+          <p>争议点在于：是不是把条款写得越细越好？3.2 版的第 7 条“厨房台面顺手擦”执行率最低，11 月 1 日到 6 日的 6 天里只在账本备注中打卡 2 次。可见过细、无明确触发条件的条款，实际会退化成“看心情”。条款要配触发点，比如“做完饭 10 分钟内擦台面”，而不是“顺手”。</p>
+        </div>
+
+        <h3>判断二：“你从没问过我想吃什么”这句话，暴露的是信息缺口，不是态度问题</h3>
+        <p>11 月 1 日逐字稿里，姐姐在第 3 分 05 秒说出这句；弟弟在第 7 分 12 秒回应“我以为你爱吃咖喱”。核对 10 月 10 日至 10 月 31 日的菜单记录：姐姐主动做咖喱 4 次，弟弟点外卖 9 次，两人共同决定菜单 2 次。数据指向同一件事——菜单决策权一直由姐姐单方面承担，弟弟没有参与信息采集，并非不愿问。11 月 6 日新增的第 9 条要求每周日 21 点共同定下周菜单，把信息采集写进了流程。</p>
+
+        <h3>判断三：开销分摊用“按项目”而非“按比例”，更适合两人家庭</h3>
+        <p>10 月账本合计支出 4186 元。按收入比例分摊在 10 月 14 日试算过一次，两人月收入相差 2100 元，比例方案算出弟弟承担 38.4%，姐姐承担 61.6%，但当月食材购买 80% 发生在姐姐下班路上，实际贡献与比例对不上。10 月 16 日改为按项目分：食材、日用品、外卖三人各半共两半，水电燃气按房间面积平摊，结果为各承担 2091 元与 2095 元，差额 4 元由当月多买一次菜的一方补平。11 月 7 日核对时，账差 3 元，记入公摊。</p>
+        <div class="compare">
+          <div class="compare-col cool">
+            <h4>按收入比例分摊</h4>
+            <ul>
+              <li>弟弟 38.4%，约 1607 元</li>
+              <li>姐姐 61.6%，约 2579 元</li>
+              <li>问题：购买行为集中在一方，比例与实际不符</li>
+            </ul>
+          </div>
+          <div class="compare-col hot">
+            <h4>按项目分摊（10月16日起）</h4>
+            <ul>
+              <li>食材、日用品、外卖各承担一半</li>
+              <li>水电燃气按房间面积平摊</li>
+              <li>结果：2091 元 vs 2095 元，差额补平</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3>判断四：情绪处理放进固定时段，比随时沟通有效</h3>
+        <p>10 月 19 日那顿饭凉了 40 分钟，两人当晚 23 点谈了两个小时，第二天都迟到。10 月 20 日起改为“每周日晚 21 点账本+情绪核对”，每次不超过 25 分钟。11 月 1 日到 11 月 7 日之间，周日核对一次，用时 22 分钟，处理了菜单、洗衣机与访客三件事，未发生超时争吵。把情绪放进固定时段，减少的不是情绪，而是随时随地的触发。</p>
+        <div class="judge">
+          <div class="jt">拆成可核对的结构</div>
+          <ul class="checklist">
+            <li><i>1</i><span><b>触发点：</b>外卖盒未清运，发生在 10 月 15 日 22 点 40 分。</span></li>
+            <li><i>2</i><span><b>规则：</b>10 月 16 日第一版分工表第 2 条，垃圾由最后吃完的人当日清运。</span></li>
+            <li><i>3</i><span><b>执行：</b>10 月 17 日至 11 月 6 日共 21 天，未执行 2 次，均在周末。</span></li>
+            <li><i>4</i><span><b>修订：</b>11 月 6 日 3.2 版把周末清运单列为第 8 条，责任人轮换。</span></li>
+            <li><i>5</i><span><b>可反驳处：</b>轮换制尚未经历完整一个周期，11 月 14 日才能验证。</span></li>
+          </ul>
+        </div>
+        <p>四条判断都指向同一件事：可核对的条款小于情绪爆发点，日常才不需要靠忍。11 月 6 日的 3.2 版只是当前最优解，不是终点——11 月 14 日轮换制第一次走完，会有一次新的评估。</p>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="panel" id="guide" aria-labelledby="guideTitle">
+        <div class="panel-head">
+          <div class="eyebrow">体验指南</div>
+          <h2 id="guideTitle">第一次和姐姐同住，先做这五步</h2>
+          <p>照做不保证不吵架，但能少吵三场。以下步骤对应记录中的具体日期。</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <div>
+              <h3>第 1 天：先量公共区域，再谈分工</h3>
+              <p>雨后巷 12 号的厨房台面 1.8 米，卫生间干区 1.1 米宽，这两个数字决定了“同时做饭”和“同时洗漱”是可行还是打架。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>第 3 天：把“最不能忍的三件事”写下来</h3>
+              <p>姐姐写的是油烟、湿毛巾、外卖盒；弟弟写的是未收衣服、冰箱串味、深夜洗衣机。10 月 12 日各写三条，重合 0 条。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>第 7 天：上墙第一版条款，不超过 6 条</h3>
+              <p>条款太多没人记，太少没约束。10 月 16 日的第 1 版刚好 5 条，贴在冰箱门，A4 纸手写。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>第 14 天：核对一次账本与执行率</h3>
+              <p>只核两项：钱花在哪、条款哪条没做到。10 月 23 日第一次核对，发现“倒垃圾”漏了 3 次。</p>
+            </div>
+          </li>
+          <li>
+            <div>
+              <h3>第 30 天：改一次条款，删一条、加一条</h3>
+              <p>11 月 6 日把“轮流买菜”删掉，换成按时间区块分配，这是唯一一次删条，原因写在了 3.2 版页边。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- 榜单 -->
+      <section class="panel" id="rank" aria-labelledby="rankTitle">
+        <div class="panel-head">
+          <div class="eyebrow">10月榜单</div>
+          <h2 id="rankTitle">执行率最高的五条家务条款</h2>
+          <p>统计口径为 10 月 16 日至 11 月 6 日，共 21 天，按打卡与账本备注合并计算。</p>
+        </div>
+        <div class="rank">
+          <div class="rank-row">
+            <span class="rk">01</span>
+            <div>
+              <h3>洗衣机滤网当日清理</h3>
+              <p>21 天执行 21 次，唯一全勤条款。</p>
+            </div>
+            <span class="badge">100%</span>
+          </div>
+          <div class="rank-row">
+            <span class="rk">02</span>
+            <div>
+              <h3>22 点后不启动洗衣机</h3>
+              <p>执行 20 次，10 月 29 日有一次超时 9 分钟。</p>
+            </div>
+            <span class="badge">95%</span>
+          </div>
+          <div class="rank-row">
+            <span class="rk">03</span>
+            <div>
+              <h3>每日食材采购登记</h3>
+              <p>执行 19 次，漏记两次均为弟弟临时买饮料。</p>
+            </div>
+            <span class="badge">90%</span>
+          </div>
+          <div class="rank-row">
+            <span class="rk">04</span>
+            <div>
+              <h3>垃圾当日清运</h3>
+              <p>执行 18 次，漏的 3 次集中在周末下午。</p>
+            </div>
+            <span class="badge">86%</span>
+          </div>
+          <div class="rank-row">
+            <span class="rk">05</span>
+            <div>
+              <h3>厨房台面顺手擦</h3>
+              <p>执行 2 次，条款没有明确触发时间。</p>
+            </div>
+            <span class="badge">10%</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="panel" id="faq" aria-labelledby="faqTitle">
+        <div class="panel-head">
+          <div class="eyebrow">常见问答</div>
+          <h2 id="faqTitle">同住之前最常被问到的六个问题</h2>
+          <p>答案主语都是生活里的具体对象，不是抽象概念。</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>姐弟同住，家务分工表真的有必要贴出来吗？</summary>
+            <div class="ans">
+              <p>有必要，但贴的位置比条款数量重要。雨后巷 12 号把表贴在冰箱门正中偏右，高度 1.35 米，两人开门就能看见。10 月 16 日至 11 月 6 日，条款从 5 条增到 9 条，而“最后吃完的人清运垃圾”这一条漏执行 3 次，都发生在周末——因为周末两人吃饭时间错开，条款的触发点变模糊了。</p>
+              <p>判断标准很直接：贴出来一周内，双方能否各说出 3 条以上的条款内容。说不出来的，说明位置或数量出了问题。</p>
+            </div>
+          </details>
+          <details>
+            <summary>共同生活账本应该记到多细？</summary>
+            <div class="ans">
+              <p>记到“日后能解释清楚”的程度。10 月 10 日至 11 月 6 日，账本共 148 笔，最小一笔 1.5 元的葱，最大一笔 860 元的二手书桌。每笔记日期、金额、购买人、用途四项，不记情绪和评价。11 月 7 日核对时差额 3 元，因为有一笔公交充值被记了两次。细到这个程度，争议才有落点。</p>
+            </div>
+          </details>
+          <details>
+            <summary>姐姐做饭，弟弟洗碗，为什么还是会吵？</summary>
+            <div class="ans">
+              <p>因为“洗碗”包含收台面、倒厨余、擦灶台三件事，而弟弟只做了第一件。10 月 19 日那顿饭凉了 40 分钟，事后复盘发现矛盾不在等饭，而在饭后台面上还留着油迹和葱皮。10 月 20 日把“洗碗”拆成三小项写进条款后，同类争执未再出现。</p>
+            </div>
+          </details>
+          <details>
+            <summary>阳台种菜适合两个人一起做吗？</summary>
+            <div class="ans">
+              <p>适合，但要分清浇水班次。10 月 26 日之后，阳台 6 个花盆分成早班和晚班，姐姐负责早班（7 点前后），弟弟负责晚班（21 点前后）。薄荷和九层塔长势最好，11 月 6 日第三次采收，合计 42 克。问题出在周末——两人都睡到 9 点后，早班的薄荷两次蔫叶，后来加了一条“周末早班延后到 9 点”。</p>
+            </div>
+          </details>
+          <details>
+            <summary>访客来访需要提前多久说明？</summary>
+            <div class="ans">
+              <p>记录里定的是提前 24 小时，且在 21 点前告知。10 月 24 日姐姐的同学临时来坐了 40 分钟，弟弟当天在房间里开线上会，事后为此定了这条。11 月 2 日弟弟朋友来住一晚，提前 26 小时说明，没有发生冲突。规则的有效性不在长度，而在双方都记得住。</p>
+            </div>
+          </details>
+          <details>
+            <summary>两个成年姐弟同住，最容易被忽略的开销是什么？</summary>
+            <div class="ans">
+              <p>耗材类，比如洗洁精、垃圾袋、厨房纸和洗衣液。10 月账本里，这类支出合计 296 元，分散在 17 笔里，单笔都不超过 40 元，最容易漏记。11 月 6 日起，耗材单独开一栏，由当月负责采购的一方统一记录，另一方可随时查。</p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 用户评论（互动一） -->
+      <section class="panel" id="reviews" aria-labelledby="revTitle">
+        <div class="panel-head">
+          <div class="eyebrow">用户评论</div>
+          <h2 id="revTitle">读者怎么说：有人抄了条款，有人不服</h2>
+          <p>评论按发布时间排列，观点不代表记录方的判断。</p>
+        </div>
+        <div class="comments">
+          <article class="cmt">
+            <span class="avt" style="background:#c8503c">林</span>
+            <div>
+              <div class="who"><b>林间小路</b><time datetime="2026-11-07">11月7日 21:14</time></div>
+              <p>照着 3.2 版把第 8 条“周末清运轮换”抄进了我们家的群公告。第一周我妹就没轮上，原因很简单——她那天出门了。轮换制没写“外出如何处理”，等于留了个口子。</p>
+            </div>
+          </article>
+          <article class="cmt">
+            <span class="avt" style="background:#3f7d6a">周</span>
+            <div>
+              <div class="who"><b>周末不加班</b><time datetime="2026-11-07">11月7日 16:02</time></div>
+              <p>按项目分摊那段我存下来了。我们家之前按收入比例，弟弟月入少，一直觉得自己亏，但账本上菜是他买的少。换成按项目之后，10 月最后一周吵了 1 次，11 月第一周 0 次。</p>
+            </div>
+          </article>
+          <article class="cmt">
+            <span class="avt" style="background:#b98a2f">陈</span>
+            <div>
+              <div class="who"><b>陈老师不吃香菜</b><time datetime="2026-11-06">11月6日 23:41</time></div>
+              <p>“厨房台面顺手擦”执行率 10% 这件事被写得挺实在。大部分家庭攻略都只写成功的条款，不写没做到的。不过 2 次打卡就能算出 10%，样本是不是太小了点？</p>
+            </div>
+          </article>
+          <article class="cmt reply">
+            <span class="avt" style="background:#9c3627">记</span>
+            <div>
+              <div class="who"><b>记录方</b><time datetime="2026-11-07">11月7日 09:10</time></div>
+              <p>对，2 次除以 21 天是 9.5%，四舍五入写成 10%。样本确实小，11 月 14 日满一个月会重算，届时会标注分母和漏记情况。这条不算反驳，算记录方法上的补充。</p>
+            </div>
+          </article>
+          <article class="cmt">
+            <span class="avt" style="background:#86776e">阿</span>
+            <div>
+              <div class="who"><b>阿柑</b><time datetime="2026-11-05">11月5日 19:27</time></div>
+              <p>阳台花盆早班晚班看着好，实际很怪。薄荷根本不需要一天两次看。我们家的做法是每三天浇透一次，比天天瞄着更省心。这段指南有点为了写而写。</p>
+            </div>
+          </article>
+          <article class="cmt">
+            <span class="avt" style="background:#4b6f8f">许</span>
+            <div>
+              <div class="who"><b>许半仙</b><time datetime="2026-11-04">11月4日 12:05</time></div>
+              <p>11 月 1 日那份对话逐字稿看了两遍。第 3 分 05 秒那句“你从没问过我想吃什么”很具体，弟弟第 7 分 12 秒的回应用“我以为”开头，这个“以为”比任何解释都有信息。真实对话就该保留这种毛边。</p>
+            </div>
+          </article>
+          <article class="cmt">
+            <span class="avt" style="background:#8f6b52">王</span>
+            <div>
+              <div class="who"><b>王小声</b><time datetime="2026-11-03">11月3日 08:48</time></div>
+              <p>账本 148 笔这个数字挺震撼。我们两口子一个月大概记 60 来笔，漏得厉害。想问一句，买菜路上的公交费算公摊还是个人？记录里好像没写清楚。</p>
+            </div>
+          </article>
+          <article class="cmt">
+            <span class="avt" style="background:#7a5c8a">九</span>
+            <div>
+              <div class="who"><b>九条尾巴</b><time datetime="2026-11-02">11月2日 22:33</time></div>
+              <p>周末早起清单第 4 项“快递签收”让我笑了，因为我家也是弟弟负责。但更想看的是，如果一方某周加班很多，清单怎么调？这个记录里没给答案。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="panel" id="news" aria-labelledby="newsTitle">
+        <div class="panel-head">
+          <div class="eyebrow">相关资讯</div>
+          <h2 id="newsTitle">同住、账本与阳台种植的四条消息</h2>
+          <p>只收 10 月 10 日以来有明确出处的条目，转述与事实分开标注。</p>
+        </div>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="src">小红书 · 账号“双人账本” · 11月5日</div>
+            <h3>两人家庭记账笔记一周获赞 1.2 万</h3>
+            <p>该账号发布“按项目分摊”实例，列出食材、耗材、水电三类，评论区集中讨论耗材漏记。属平台公开内容转述。</p>
+          </article>
+          <article class="news-card">
+            <div class="src">豆瓣小组 · “合租生活” · 11月3日</div>
+            <h3>家务分工表模板被下载 3800 次</h3>
+            <p>模板含 7 条基础条款，与 10 月 16 日第一版结构接近，差别在于未设周末清运轮换。小组内有人指出轮换制才是难点。</p>
+          </article>
+          <article class="news-card">
+            <div class="src">小区物业公告 · 雨后巷 · 10月29日</div>
+            <h3>夜间噪音投诉集中在 22 点至 23 点</h3>
+            <p>物业 10 月 29 日贴出通知，提出洗衣机与吸尘器使用时段建议。10 月 29 日超时 9 分钟那次与通知时间吻合，属事实记录。</p>
+          </article>
+          <article class="news-card">
+            <div class="src">本地菜市 · 摊主口述 · 10月26日</div>
+            <h3>薄荷苗当季每株 6 元，比 9 月便宜 2 元</h3>
+            <p>摊主说秋季薄荷好活。记录方 10 月 26 日买了 2 株，成活 2 株，11 月 6 日采收第三次。价格为转述，成活率为自测。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="panel" id="related" aria-labelledby="relTitle">
+        <div class="panel-head">
+          <div class="eyebrow">相关推荐</div>
+          <h2 id="relTitle">还想看的八个具体条目</h2>
+          <p>点击跳到对应栏目，不另开页面。</p>
+        </div>
+        <div class="recs">
+          <a href="/#deep">姐弟家务分工表逐条拆解</a>
+          <a href="/#guide">同住开销记账四步法</a>
+          <a href="/#faq">阳台薄荷采收记录</a>
+          <a href="/#updates">洗衣机预约表与夜间噪音</a>
+          <a href="/#reviews">11月1日对话逐字稿回看</a>
+          <a href="/#news">两人家庭账本模板对比</a>
+          <a href="/#rank">周末菜单安排四周清单</a>
+          <a href="/#overview">访客接待 24 小时约定</a>
+        </div>
+      </section>
+
+      <!-- 互动二：共写一条条款 -->
+      <section class="panel" id="coWrite" aria-labelledby="cwTitle">
+        <div class="panel-head">
+          <div class="eyebrow">互动栏目 · 共写一条条款</div>
+          <h2 id="cwTitle">帮 3.2 版补上“外出时轮换怎么算”</h2>
+          <p>11 月 14 日轮换制第一次走完，缺口是：负责清运的一方临时外出，条款该怎么写。下面是目前收集到的三个版本，投票结果会写进 3.3 版。</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>A 版：自动顺延，回来后 6 小时内补做</summary>
+            <div class="ans"><p>支持理由：不增加沟通成本。反对理由：6 小时是否覆盖过夜，没有写明。10 月 29 日超时 9 分钟的先例说明“小时级”约定执行起来容易模糊。</p></div>
+          </details>
+          <details>
+            <summary>B 版：外出前指定代班人，代班人当日完成</summary>
+            <div class="ans"><p>支持理由：责任明确。反对理由：代班人如果也外出，链条会断。记录方倾向这一版，因为在 10 月 16 日至 11 月 6 日的 21 天里，两人同时外出的日子只有 1 天。</p></div>
+          </details>
+          <details>
+            <summary>C 版：提前一天在群里报备，报备成功即免除当日</summary>
+            <div class="ans"><p>支持理由：最省事。反对理由：报备成功等于免除，可能被反复使用。11 月 2 日访客那次已经用过一次类似操作，需要观察频率。</p></div>
+          </details>
+        </div>
+        <form id="voteForm" style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+          <label style="font-size:.9rem;color:var(--ink-2)">
+            <input type="radio" name="ver" value="A" checked> A 版
+          </label>
+          <label style="font-size:.9rem;color:var(--ink-2)">
+            <input type="radio" name="ver" value="B"> B 版
+          </label>
+          <label style="font-size:.9rem;color:var(--ink-2)">
+            <input type="radio" name="ver" value="C"> C 版
+          </label>
+          <button type="submit" class="btn btn-main" style="padding:8px 16px;font-size:.88rem">投这一版</button>
+          <span id="voteMsg" role="status" style="font-size:.85rem;color:var(--mint)"></span>
+        </form>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side-col" aria-label="侧栏导航与补充信息">
+      <div class="side-card">
+        <h2>栏目导航</h2>
+        <ul class="side-nav" id="sideNav">
+          <li><a href="/#overview">同住概览</a></li>
+          <li><a href="/#featured">精选日常</a></li>
+          <li><a href="/#updates">本周更新</a></li>
+          <li><a href="/#channels">分类频道</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#rank">10月榜单</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#reviews">读者评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#coWrite">共写条款</a></li>
+        </ul>
+      </div>
+
+      <div class="side-card quote-card">
+        <h2>对话里的原话</h2>
+        <p>“写下来不是为了考核，是为了少一次开口气。”</p>
+        <cite>—— 11 月 4 日 22:16，姐姐在厨房说</cite>
+        <p style="margin-top:10px">“我以为你爱吃咖喱。”</p>
+        <cite>—— 11 月 1 日第 7 分 12 秒，弟弟的回应</cite>
+      </div>
+
+      <div class="side-card">
+        <h2>10月开支速览</h2>
+        <ul class="side-list">
+          <li><b>食材</b>1732 元，占比 41.4%<time datetime="2026-11-07">核对于 11月7日</time></li>
+          <li><b>外卖</b>612 元，共 23 单<time datetime="2026-11-07">核对于 11月7日</time></li>
+          <li><b>水电燃气</b>486 元<time datetime="2026-11-07">核对于 11月7日</time></li>
+          <li><b>日用品</b>296 元，分散 17 笔<time datetime="2026-11-07">核对于 11月7日</time></li>
+        </ul>
+      </div>
+
+      <div class="side-card">
+        <h2>近三天小事</h2>
+        <ul class="side-list">
+          <li>11月8日：周末早起清单上线，6 项</li>
+          <li>11月7日：账本核对完，差额 3 元</li>
+          <li>11月6日：分工表 3.2 版上墙</li>
+          <li>11月6日：薄荷第三次采收 42 克</li>
+        </ul>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg width="30" height="30" viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#c8503c"/>
+            <path d="M16 40c6-14 12-14 16 0 4-14 10-14 16 0" fill="none" stroke="#fdf3e6" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="32" cy="48" r="4" fill="#fdf3e6"/>
+          </svg>
+          <strong>海角社区我和姐姐的幸福生活</strong>
+        </div>
+        <p class="foot-pos">记录两名成年家庭成员在雨后巷 12 号同住两个月里的分工、账本与对话毛边。</p>
+      </div>
+      <div class="foot-col">
+        <h3>记录</h3>
+        <a href="/#overview">同住概览</a>
+        <a href="/#featured">精选日常</a>
+        <a href="/#updates">本周更新</a>
+        <a href="/#deep">深度解析</a>
+      </div>
+      <div class="foot-col">
+        <h3>方法</h3>
+        <a href="/#guide">体验指南</a>
+        <a href="/#rank">10月榜单</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#coWrite">共写条款</a>
+      </div>
+      <div class="foot-col">
+        <h3>互动</h3>
+        <a href="/#reviews">读者评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">相关推荐</a>
+        <a href="/#channels">分类频道</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>示例数据说明：文中人物、地址、账目与对话均为演示用示例，不对应真实个人。页脚更新时间 2026-11-08，对应文首“周末早起清单”与 11 月 7 日账本核对两项可核对更新。</span>
+      <span>© 2026 雨后巷日常记录</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  // 移动菜单
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A' && window.matchMedia('(max-width:720px)').matches){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  // 本地搜索
+  var input = document.getElementById('searchInput');
+  var result = document.getElementById('searchResult');
+  var index = [
+    {t:'家务分工表 3.2 版：为什么把“顺手”写进条款', id:'featured', k:'家务分工 条款'},
+    {t:'10月19日：咖喱饭与迟到 40 分钟的弟弟', id:'featured', k:'咖喱 晚饭 迟到'},
+    {t:'阳台薄荷与九层塔：两个花盆的归属权', id:'featured', k:'阳台 薄荷 九层塔'},
+    {t:'洗衣机预约表：22 点后不转筒的约定', id:'featured', k:'洗衣机 22点'},
+    {t:'11月1日对话逐字稿：你从没问过我想吃什么', id:'deep', k:'对话 逐字稿 菜单'},
+    {t:'同住开销记账四步法', id:'guide', k:'账本 记账 开销'},
+    {t:'姐弟同住账本应该记到多细', id:'faq', k:'账本 细节 金额'},
+    {t:'访客来访提前 24 小时说明', id:'faq', k:'访客 24小时'},
+    {t:'每周日 21 点核对账本与下周菜单', id:'updates', k:'周日 菜单 核对'},
+    {t:'10月榜单：执行率最高的五条条款', id:'rank', k:'榜单 执行率'},
+    {t:'共写一条条款：外出时轮换怎么算', id:'coWrite', k:'投票 轮换 外出'},
+    {t:'小区物业夜间噪音投诉通知', id:'news', k:'噪音 物业 电梯'},
+    {t:'两人家庭账本模板对比', id:'news', k:'模板 账本 下载'}
+  ];
+  function esc(s){return s.replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function runSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){ result.classList.remove('show'); result.innerHTML=''; return; }
+    var hits = index.filter(function(item){
+      return (item.t + ' ' + item.k).toLowerCase().indexOf(q) > -1;
+    });
+    result.innerHTML = '';
+    if(!hits.length){
+      var d = document.createElement('div');
+      d.className = 'search-empty';
+      d.textContent = '没有找到“' + input.value.trim() + '”相关条目，试试“账本”“阳台”“洗衣机”。';
+      result.appendChild(d);
+    } else {
+      hits.slice(0,8).forEach(function(item){
+        var a = document.createElement('a');
+        a.href = '/#' + item.id;
+        a.textContent = item.t;
+        result.appendChild(a);
+      });
+    }
+    result.classList.add('show');
+  }
+  if(input && result){
+    input.addEventListener('input', runSearch);
+    input.addEventListener('focus', runSearch);
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.search')) result.classList.remove('show');
+    });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ result.classList.remove('show'); input.blur(); }
+    });
+  }
+
+  // 侧栏滚动高亮
+  var sideLinks = Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('#mainNav a'));
+  var sections = sideLinks.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  }).filter(Boolean);
+  function highlight(){
+    var pos = window.scrollY + 140;
+    var current = null;
+    sections.forEach(function(sec){
+      if(sec.offsetTop <= pos) current = sec.id;
+    });
+    sideLinks.forEach(function(a){
+      var on = a.getAttribute('href') === '/#' + current;
+      a.classList.toggle('active', on);
+    });
+    navLinks.forEach(function(a){
+      var on = a.getAttribute('href') === '/#' + current;
+      a.classList.toggle('active', on);
+    });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  // 回到顶部
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520) toTop.classList.add('show');
+    else toTop.classList.remove('show');
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  // 投票交互
+  var form = document.getElementById('voteForm');
+  var msg = document.getElementById('voteMsg');
+  if(form && msg){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var chosen = form.querySelector('input[name="ver"]:checked').value;
+      msg.textContent = '已记录：' + chosen + ' 版。结果将写入 11 月 14 日的 3.3 版，届时在“本周更新”公布。';
+    });
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"海角社区我和姐姐的幸福生活",
+  "description":"记录两名成年家庭成员同住两个月日常的中文内容站，覆盖家务分工、开销记账、阳台种植与对话逐字稿。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"姐弟同住，家务分工表真的有必要贴出来吗？","acceptedAnswer":{"@type":"Answer","text":"有必要，贴的位置比条款数量重要。分工表贴在冰箱门正中偏右、高度1.35米处，两人开门就能看见。10月16日至11月6日条款从5条增到9条，周末垃圾清运仍漏执行3次，因为周末吃饭时间错开使触发点变模糊。"}},
+    {"@type":"Question","name":"共同生活账本应该记到多细？","acceptedAnswer":{"@type":"Answer","text":"记到日后能解释清楚的程度。10月10日至11月6日共148笔，最小1.5元的葱，最大860元二手书桌，每笔记日期、金额、购买人、用途四项。11月7日核对差额3元，原因是公交充值被记两次。"}},
+    {"@type":"Question","name":"姐姐做饭，弟弟洗碗，为什么还是会吵？","acceptedAnswer":{"@type":"Answer","text":"因为洗碗包含收台面、倒厨余、擦灶台三件事，而一方只做了第一件。10月19日饭后矛盾集中在台面油迹和葱皮，10月20日把洗碗拆成三小项写进条款后未再出现同类争执。"}},
+    {"@type":"Question","name":"阳台种菜适合两个人一起做吗？","acceptedAnswer":{"@type":"Answer","text":"适合，但要分清浇水班次。10月26日起阳台6个花盆分早班与晚班，薄荷和九层塔长势最好，11月6日第三次采收合计42克。周末两次因睡到9点后导致薄荷蔫叶，后加周末早班延后到9点的规定。"}},
+    {"@type":"Question","name":"访客来访需要提前多久说明？","acceptedAnswer":{"@type":"Answer","text":"记录里定的是提前24小时，并在21点前告知。10月24日临时访客停留40分钟引发一次冲突，11月2日提前26小时说明则未发生冲突。"}},
+    {"@type":"Question","name":"两个成年姐弟同住，最容易被忽略的开销是什么？","acceptedAnswer":{"@type":"Answer","text":"耗材类，如洗洁精、垃圾袋、厨房纸、洗衣液。10月账本中这类支出合计296元，分散在17笔里，单笔不超40元，最容易漏记。11月6日起耗材单独开栏统一记录。"}}
+  ]
+}
+</script>
+</body>
+                                             </html>
